@@ -9,7 +9,6 @@ export const ProjectsTabContainer = styled.div`
     align-items: center;
 `;
 
-
 export const CardsContainer = styled.div`
     height: auto;
     width: 100%;
