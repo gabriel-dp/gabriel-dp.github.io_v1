@@ -10,7 +10,7 @@ export const SkillsTabContainer = styled.div`
 `;
 
 export const SkillsClassTitle = styled.h2`
-    font-size: 2rem;
+    font-size: ${props => props.size}rem;
     color: ${props => props.theme.colors.text};
     font-family: 'Oswald', sans-serif;
     font-weight: 400;

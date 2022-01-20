@@ -8,7 +8,7 @@ const Skills = () => {
     return (
         <SkillsTabContainer>
             <Header title={'Skills'} subtitle={'In progress...'}/>
-            <SkillsClassTitle>Languages</SkillsClassTitle>
+            <SkillsClassTitle size={1.75}>Languages</SkillsClassTitle>
             <IconsContainer>
                 {
                     Object.keys(ICONS.langs).map(lang => (
@@ -18,7 +18,7 @@ const Skills = () => {
                     ))
                 }
             </IconsContainer>
-            <SkillsClassTitle>Frameworks & Libraries</SkillsClassTitle>
+            <SkillsClassTitle size={1.5}>Frameworks & Libraries</SkillsClassTitle>
             <IconsContainer>
                 {
                     Object.keys(ICONS.fws).map(fw => (
@@ -28,7 +28,7 @@ const Skills = () => {
                     ))
                 }
             </IconsContainer>
-            <SkillsClassTitle>Others</SkillsClassTitle>
+            <SkillsClassTitle size={1.25}>Others</SkillsClassTitle>
             <IconsContainer>
                 {
                     Object.keys(ICONS.others).map(other => (
