@@ -18,16 +18,17 @@ export const CardContainer = styled.a`
     justify-items: center;
     flex-direction: column-reverse;
 
-    :hover {
-        .description {
-            height: 65%;
-        }
+    @media (min-width: 750px) {
+        :hover {
+            .description {
+                height: 65%;
+            }
 
-        .language {
-            font-size: 0.75em;
+            .language {
+                font-size: 0.75em;
+            }
         }
     }
-
 `;
 
 export const ImageCover = styled.div`

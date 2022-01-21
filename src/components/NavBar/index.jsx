@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 
-import { NavBarContainer, NavBarDiv, NavBarList, NavBarItem, ThemeSwitch, SwitchIcon } from './styles';
+import { NavBarContainer, NavBarDiv, NavBarList, NavBarItem, ThemeSwitch, SwitchIcon, HoverAnimation} from './styles';
 import Switch from 'react-switch';
 import { MdNightlightRound, MdWbSunny } from 'react-icons/md';
 
@@ -13,10 +13,10 @@ const NavBar = ({ToggleTheme, goTo, homeRef, aboutmeRef, skillsRef, projectsRef}
             <NavBarContainer>
                 <NavBarDiv>
                     <NavBarList>
-                        <NavBarItem onClick={() => goTo(homeRef)}>Home</NavBarItem>
-                        <NavBarItem onClick={() => goTo(aboutmeRef)}>About Me</NavBarItem>
-                        <NavBarItem onClick={() => goTo(skillsRef)}>Skills</NavBarItem>
-                        <NavBarItem onClick={() => goTo(projectsRef)}>Projects</NavBarItem>
+                        <NavBarItem onClick={() => goTo(homeRef)} className='home'><HoverAnimation>Home</HoverAnimation></NavBarItem>
+                        <NavBarItem onClick={() => goTo(aboutmeRef)}><HoverAnimation>About Me</HoverAnimation></NavBarItem>
+                        <NavBarItem onClick={() => goTo(skillsRef)}><HoverAnimation>Skills</HoverAnimation></NavBarItem>
+                        <NavBarItem onClick={() => goTo(projectsRef)}><HoverAnimation>Projects</HoverAnimation></NavBarItem>
                     </NavBarList>
                 </NavBarDiv>
                 <ThemeSwitch>

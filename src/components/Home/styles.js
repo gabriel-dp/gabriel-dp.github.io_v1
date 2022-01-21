@@ -54,10 +54,12 @@ export const StyledArrow = styled(BiDownArrow)`
     left: 50%;
     transform: translate(-50%);
     transition: all 0.25s ease;
+    cursor: pointer;
 
-    :hover {
-        font-size: 1.5rem;
-        color: ${props => props.theme.colors.primary};
-        cursor: pointer;
+    @media (min-width: 750px) {
+        :hover {
+            font-size: 1.5rem;
+            color: ${props => props.theme.colors.primary};
+        }
     }
 `;

@@ -18,21 +18,13 @@ export const NavBarContainer = styled.div`
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-
-    @media (max-width: 750px) {
-        justify-content: space-around;
-    }
 `;
 
 export const NavBarDiv = styled.div`
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: center;
     transition: all 0.25s ease;
-
-    @media (max-width: 750px) {
-        width: 70%;
-    }
 `;
 
 export const NavBarList = styled.ul`
@@ -47,16 +39,60 @@ export const NavBarList = styled.ul`
 
 export const NavBarItem = styled.li`
     color: ${props => props.theme.colors.text};
+    font-size: 1rem;
     margin: 0 2vw;
     white-space: nowrap;
     cursor: pointer;
+    display: none;
+    transition: font-size 0.25s ease;
+
+    &.home {
+        display: block
+    }
+
+    @media (min-width: 625px) {
+        display: block;
+    }
+
+    @media (min-width: 750px) {
+        :hover {
+            font-size: 1.1rem;
+        }
+    }
+`;
+
+export const HoverAnimation = styled.a`
+    user-select: none;
+    position: relative;
+    display: block;
+    transition: 0.25s;
+
+    @media (min-width: 750px) {
+        ::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            top: 100%;
+            left: 0;
+            background: ${props => props.theme.colors.primary};
+            transition: transform 0.5s;
+            transform: scaleX(0);
+            transform-origin: right;
+        }
+
+        :hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
 `;
 
 export const ThemeSwitch  = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 15%;
+    width: 20%;
 `;
 
 export const SwitchIcon = styled.div`

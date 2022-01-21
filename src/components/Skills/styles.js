@@ -2,12 +2,17 @@ import styled from 'styled-components';
 
 export const SkillsTabContainer = styled.div`
     width: 100%;
+    background-color: ${props => props.theme.colors.background};
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.2s ease;
     padding: 4rem 15%;
 
-    background-color: ${props => props.theme.colors.background};
+    @media (max-width: 650px) {
+        padding : 4rem 10%;
+    }
+
 `;
 
 export const SkillsClassTitle = styled.h2`
@@ -40,7 +45,7 @@ export const SkillIcon = styled.div`
     aspect-ratio: 1;
     display: flex;
     justify-content: center;
-    margin: 1rem 0.5em;
+    margin: 1rem 0.625em;
     transition: all 0.25s ease;
 
     img {
@@ -49,7 +54,9 @@ export const SkillIcon = styled.div`
         object-fit: contain;
     }
 
-    :hover {
-        height: ${props => props.size + 1}rem;
+    @media (min-width: 750px) {
+        :hover {
+            height: ${props => props.size + 1}rem;
+        }
     }
 `;

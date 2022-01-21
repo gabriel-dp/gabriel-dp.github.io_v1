@@ -6,21 +6,23 @@ export const FooterTabContainer = styled.div`
     background-color: ${props => props.theme.colors.background};
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 15%;
+    padding: 2rem 15%;
+    transition: all 0.2s ease;
+    flex-wrap: wrap;
 
     @media (max-width: 750px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 5% 15%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
     }
 `;
 
 export const WhoDid = styled.div`
+    width: 50%;
     color: ${props => props.theme.colors.gray};
-    max-width: 50%;
+    white-space: nowrap;
     
     h3 {
         font-size: 1rem;
@@ -35,7 +37,6 @@ export const WhoDid = styled.div`
     }
 
     @media (max-width: 750px) {
-        max-width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -44,8 +45,15 @@ export const WhoDid = styled.div`
 `;
 
 export const FindMe = styled.div`
+    width: 50%;
     height: 2.5rem;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    @media (max-width: 750px) {
+       justify-content: center;
+    }
 
     a {
         display: flex;
