@@ -4,7 +4,7 @@ export const CardContainer = styled.div`
     width: 100%;
     max-width: 25.5rem;
     height: 16.5rem;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     margin-bottom: 2rem;
     border: 0.25em ${props => props.theme.colors.lightgray} solid;
     border-radius: 1rem;

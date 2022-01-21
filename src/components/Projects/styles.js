@@ -8,7 +8,7 @@ export const ProjectsTabContainer = styled.div`
     flex-direction: column;
     align-items: center;
 
-    padding: 4rem 10%;
+    padding: 4rem 15%;
 `;
 
 export const CardsContainer = styled.div`
@@ -16,11 +16,9 @@ export const CardsContainer = styled.div`
     width: 100%;
     padding-bottom: 2rem;
 
-    //background-color: red;
-
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 `;
 
 export const SeeMore = styled.div`
