@@ -3,20 +3,21 @@ import styled from 'styled-components';
 export const NavBarContainer = styled.div`
     width: 100%;
     height: 8vh;
-    background-color: ${props => props.theme.colors.background};
-    border-bottom: 1px ${props => props.theme.colors.text}99 solid;
+    min-height: 3rem;
+    max-height: 3.5rem;
     position: fixed;
     top: 0;
     z-index: 1;
+
+    background: ${props => props.theme.colors.background}CC;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid ${props => props.theme.colors.background}33;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    @media (max-height: 600px) {
-        height: 3rem;
-    }
 `;
 
 export const NavBarList = styled.ul`
