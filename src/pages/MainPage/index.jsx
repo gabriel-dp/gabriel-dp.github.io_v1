@@ -11,6 +11,7 @@ import { Screen } from './styles';
 
 const MainPage = ({ ToggleTheme }) => {
 
+    const homeRef = useRef(null);
     const aboutmeRef = useRef(null);
     const skillsRef = useRef(null);
     const projectsRef = useRef(null);
@@ -21,8 +22,8 @@ const MainPage = ({ ToggleTheme }) => {
 
     return (
         <Screen>
-            <NavBar ToggleTheme={ToggleTheme} goTo={goTo} aboutmeRef={aboutmeRef} skillsRef={skillsRef} projectsRef={projectsRef}/>
-            <Home goTo={goTo} nextRef={aboutmeRef}/>
+            <NavBar ToggleTheme={ToggleTheme} goTo={goTo} homeRef={homeRef} aboutmeRef={aboutmeRef} skillsRef={skillsRef} projectsRef={projectsRef}/>
+            <Home goTo={goTo} innerRef={homeRef} nextRef={aboutmeRef}/>
             <AboutMe innerRef={aboutmeRef}/>
             <Skills innerRef={skillsRef}/>
             <Projects innerRef={projectsRef}/>

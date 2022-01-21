@@ -10,8 +10,8 @@ export const NavBarContainer = styled.div`
     z-index: 1;
 
     background: ${props => props.theme.colors.background}CC;
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid ${props => props.theme.colors.background}33;
 
     display: flex;
@@ -25,12 +25,13 @@ export const NavBarContainer = styled.div`
 `;
 
 export const NavBarDiv = styled.div`
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: center;
+    transition: all 0.25s ease;
 
     @media (max-width: 750px) {
-        width: 75%;
+        width: 70%;
     }
 `;
 
@@ -46,7 +47,8 @@ export const NavBarList = styled.ul`
 
 export const NavBarItem = styled.li`
     color: ${props => props.theme.colors.text};
-    margin: 0 5%;
+    margin: 0 2vw;
+    white-space: nowrap;
     cursor: pointer;
 `;
 
@@ -54,7 +56,7 @@ export const ThemeSwitch  = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 20%;
+    width: 15%;
 `;
 
 export const SwitchIcon = styled.div`
