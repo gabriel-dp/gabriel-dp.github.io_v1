@@ -48,9 +48,9 @@ export const ImageCover = styled.div`
 `;
 
 export const DescriptionContainer = styled.div`
-    height: 30%;
+    height: 32.5%;
     width: 100%;
-    padding: 1em;
+    padding: 0.75em 1em;
     background-color: ${props => props.theme.colors.lightgray};
     color: ${props => props.theme.colors.black};
     transition: all 0.25s ease;
