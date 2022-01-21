@@ -5,12 +5,7 @@ export const SkillsTabContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 15%;
-    padding-bottom: 5rem;
-
-    @media (max-width: 750px) {
-        padding: 1rem 10%;
-    }
+    padding: 4rem 15%;
 
     background-color: ${props => props.theme.colors.background};
 `;
@@ -42,7 +37,7 @@ export const IconsContainer = styled.div`
 
 export const SkillIcon = styled.div`
     height: ${props => props.size}rem;
-    aspect-ratio: 1.25;
+    aspect-ratio: 1;
     display: flex;
     justify-content: center;
     margin: 1rem 0.5em;

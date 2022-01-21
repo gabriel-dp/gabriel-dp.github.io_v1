@@ -2,59 +2,51 @@ import styled from 'styled-components';
 
 export const AboutMeTabContainer = styled.div`
     width: 100%;
+    min-height: 35rem;
     background-color: ${props => props.theme.colors.primary};
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 6rem 10rem;
-
-    @media (max-width: 750px) {
-        padding: 2rem 0;
-        padding-bottom: 4rem;
-    }
+    padding: 4rem 15%;
 `;
 
 export const MySelf = styled.div`
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-
-    @media (max-width: 750px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    align-items: center;
 `;
 
 export const MyPhoto = styled.div`
-    height: 25rem;
-    aspect-ratio: 1;
-
+    width: 100%;
+    margin-right: 10%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 20rem;
+    }
+
+    @media (max-width: 900px) {
+        display: none;
     }
 `;
 
 export const MyDescription = styled.div`
-    width: 40%;
-
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 
     p {
         font-size: 1rem;
         color: ${props => props.theme.colors.text};
-        text-align: right;
     }
 
-    @media (max-width: 750px) {
-        width: 75%;
+    @media (max-width: 900px) {
+        width: 100%;
         align-items: center;
 
         p {

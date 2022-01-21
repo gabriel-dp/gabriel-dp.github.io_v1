@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-    width: 21.25rem;
-    height: 13.75rem;
-    margin: 1.5rem 10%;
+    width: 100%;
+    max-width: 25.5rem;
+    height: 16.5rem;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
     border: 0.25em ${props => props.theme.colors.text} solid;
     border-radius: 1rem;
     position: relative;
@@ -11,6 +13,7 @@ export const CardContainer = styled.div`
     cursor: pointer;
 
     display: flex;
+    justify-items: center;
     flex-direction: column-reverse;
 
     :hover {

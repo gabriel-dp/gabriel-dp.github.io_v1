@@ -70,7 +70,11 @@ const Projects = () => {
                     ))
                 }
             </CardsContainer>
-            <SeeMore><a target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>See more projects</a></SeeMore>
+            <SeeMore>
+                <a target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>
+                    See more projects
+                </a>
+            </SeeMore>
         </ProjectsTabContainer>
     );
 }

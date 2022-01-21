@@ -6,13 +6,15 @@ export const FooterTabContainer = styled.div`
     background-color: ${props => props.theme.colors.background};
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 15%;
 
     @media (max-width: 750px) {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5% 15%;
     }
 `;
 
@@ -51,10 +53,5 @@ export const FindMe = styled.div`
             max-height: 100%;
             margin: 0 0.5rem;
         }
-    }
-
-    @media (max-width: 750px) {
-        width: 80%;
-        justify-content: center;
     }
 `;
