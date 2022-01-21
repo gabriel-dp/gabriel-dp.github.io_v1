@@ -22,7 +22,7 @@ const MainPage = ({ ToggleTheme }) => {
     return (
         <Screen>
             <NavBar ToggleTheme={ToggleTheme} goTo={goTo} aboutmeRef={aboutmeRef} skillsRef={skillsRef} projectsRef={projectsRef}/>
-            <Home/>
+            <Home goTo={goTo} nextRef={aboutmeRef}/>
             <AboutMe innerRef={aboutmeRef}/>
             <Skills innerRef={skillsRef}/>
             <Projects innerRef={projectsRef}/>

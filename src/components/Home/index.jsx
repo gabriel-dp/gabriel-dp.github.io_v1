@@ -1,6 +1,6 @@
 import { HomeTabContainer, MainTitle, Object3DContainer, StyledArrow } from './styles'
 
-const Home = () => {
+const Home = ({goTo, nextRef}) => {
     return (
         <HomeTabContainer>
             <MainTitle>
@@ -8,7 +8,7 @@ const Home = () => {
                 <h3>Programming and 3D Modelling</h3>
             </MainTitle>
             <Object3DContainer/>
-            <StyledArrow/>
+            <StyledArrow onClick={() => goTo(nextRef)}/>
         </HomeTabContainer>
     );
 }
