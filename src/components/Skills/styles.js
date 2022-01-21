@@ -5,6 +5,7 @@ export const SkillsTabContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 5rem;
 
     background-color: ${props => props.theme.colors.background};
 `;
