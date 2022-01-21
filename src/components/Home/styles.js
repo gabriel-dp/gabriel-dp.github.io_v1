@@ -9,7 +9,7 @@ export const HomeTabContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 0 10rem;
+    padding: 0 15%;
 
     @media (max-width: 750px) {
         padding: 0;

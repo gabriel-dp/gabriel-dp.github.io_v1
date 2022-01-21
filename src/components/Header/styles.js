@@ -4,7 +4,7 @@ export const HeaderContainer = styled.div`
     margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: ${props => props.align};
 `;
 
 export const HeaderTitle = styled.h1`
