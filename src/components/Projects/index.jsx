@@ -5,7 +5,7 @@ import GithubCard from './GithubCard';
 
 import { ProjectsTabContainer, CardsContainer, SeeMore } from './styles';
 
-const Projects = () => {
+const Projects = ({innerRef}) => {
 
     const githubConfig = {
         username: 'gabrieldp23',
@@ -57,25 +57,27 @@ const Projects = () => {
     }, [githubConfig.keyTopic, repos]);
     
     return (
-        <ProjectsTabContainer>
-            <Header bg={'dark'} title={'Projects'} subtitle={'From Github'}/>
-            <CardsContainer>
-                {
-                    repositories.map(repo => (
-                        <GithubCard
-                            key={repo.name}
-                            repoData={repo}
-                            githubConfig={githubConfig}
-                        />
-                    ))
-                }
-            </CardsContainer>
-            <SeeMore>
-                <a target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>
-                    See more projects
-                </a>
-            </SeeMore>
-        </ProjectsTabContainer>
+        <div ref={innerRef}>
+            <ProjectsTabContainer>
+                <Header bg={'dark'} title={'Projects'} subtitle={'From Github'}/>
+                <CardsContainer>
+                    {
+                        repositories.map(repo => (
+                            <GithubCard
+                                key={repo.name}
+                                repoData={repo}
+                                githubConfig={githubConfig}
+                            />
+                        ))
+                    }
+                </CardsContainer>
+                <SeeMore>
+                    <a target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>
+                        See more projects
+                    </a>
+                </SeeMore>
+            </ProjectsTabContainer>
+        </div>
     );
 }
 

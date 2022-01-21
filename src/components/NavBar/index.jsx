@@ -5,7 +5,7 @@ import { NavBarContainer, NavBarDiv, NavBarList, NavBarItem, ThemeSwitch, Switch
 import Switch from 'react-switch';
 import { MdNightlightRound, MdWbSunny } from 'react-icons/md';
 
-const NavBar = ({ToggleTheme}) => {
+const NavBar = ({ToggleTheme, goTo, aboutmeRef, skillsRef, projectsRef}) => {
     const theme = useContext(ThemeContext)
 
     return (
@@ -13,9 +13,9 @@ const NavBar = ({ToggleTheme}) => {
             <NavBarContainer>
                 <NavBarDiv>
                     <NavBarList>
-                        <NavBarItem>About Me</NavBarItem>
-                        <NavBarItem>Skills</NavBarItem>
-                        <NavBarItem>Projects</NavBarItem>
+                        <NavBarItem onClick={() => goTo(aboutmeRef)}>About Me</NavBarItem>
+                        <NavBarItem onClick={() => goTo(skillsRef)}>Skills</NavBarItem>
+                        <NavBarItem onClick={() => goTo(projectsRef)}>Projects</NavBarItem>
                     </NavBarList>
                 </NavBarDiv>
                 <ThemeSwitch>
