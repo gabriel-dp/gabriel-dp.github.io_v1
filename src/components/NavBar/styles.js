@@ -21,7 +21,7 @@ export const NavBarContainer = styled.div`
 `;
 
 export const NavBarDiv = styled.div`
-    width: 60%;
+    width: 55%;
     display: flex;
     justify-content: center;
     transition: all 0.25s ease;
@@ -44,7 +44,7 @@ export const NavBarItem = styled.li`
     white-space: nowrap;
     cursor: pointer;
     display: none;
-    transition: font-size 0.25s ease;
+    transition: font-size 0.1s ease;
 
     &.home {
         display: block
@@ -92,7 +92,7 @@ export const ThemeSwitch  = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 20%;
+    width: 22.5%;
 `;
 
 export const SwitchIcon = styled.div`
