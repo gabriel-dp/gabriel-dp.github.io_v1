@@ -32,7 +32,7 @@ export const CardContainer = styled.a`
 `;
 
 export const ImageCover = styled.div`
-    height: 65%;
+    height: 70%;
     width: 100%;
     background-color: gray;
     overflow: hidden;
@@ -43,11 +43,12 @@ export const ImageCover = styled.div`
         height: 100%;
         max-height: 100%;
         object-fit: cover;
+        object-position: top;
     }
 `;
 
 export const DescriptionContainer = styled.div`
-    height: 35%;
+    height: 30%;
     width: 100%;
     padding: 1em;
     background-color: ${props => props.theme.colors.lightgray};
@@ -55,6 +56,9 @@ export const DescriptionContainer = styled.div`
     transition: all 0.25s ease;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     h2 {
         font-size: 1em;
@@ -79,4 +83,22 @@ export const LanguageContainer = styled.div`
     position: absolute;
     top: 7%;
     right: 5%;
+`;
+
+export const TagsContainer = styled.div`
+    width: 100%;
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+`;
+
+export const TagItem = styled.div`
+    color: ${props => props.theme.colors.white};
+    background-color: ${props => props.theme.colors.black};
+    font-size: 0.85rem;
+    margin-right: 0.75rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    white-space: nowrap;
 `;

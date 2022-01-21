@@ -1,4 +1,4 @@
-import { CardContainer, ImageCover, DescriptionContainer, LanguageContainer } from './styles'
+import { CardContainer, ImageCover, DescriptionContainer, LanguageContainer, TagsContainer, TagItem } from './styles'
 
 const GithubCard = ({ repoData, githubConfig }) => {
 const repoUrl = `https://github.com/${githubConfig.username}/${repoData.name}/`;
@@ -8,8 +8,17 @@ const repoUrl = `https://github.com/${githubConfig.username}/${repoData.name}/`;
         <CardContainer target='_blanck' href={repoUrl}>
             <LanguageContainer className='language'>{repoData.language}</LanguageContainer>
             <DescriptionContainer className='description'>
-                <h2>{repoData.name}</h2>
-                <p>{repoData.description}</p>
+                <div>
+                    <h2>{repoData.name}</h2>
+                    <p>{repoData.description}</p>
+                </div>
+                <TagsContainer>
+                    {
+                        repoData.tags.map((tag) => (
+                            <TagItem>{tag}</TagItem>
+                        ))
+                    }
+                </TagsContainer>
             </DescriptionContainer>
             <ImageCover><img src={repoCoverUrl} alt='portfolio-cover'/></ImageCover>
         </CardContainer>

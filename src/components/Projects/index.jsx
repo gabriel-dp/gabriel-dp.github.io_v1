@@ -36,10 +36,11 @@ const Projects = ({innerRef}) => {
         }
 
         class Repository {
-            constructor (name, description, language) {
+            constructor (name, description, language, tags) {
                 this.name = name;
                 this.description = description;
                 this.language = language;
+                this.tags = tags;
             }
         }
 
@@ -47,7 +48,14 @@ const Projects = ({innerRef}) => {
         repos.map(repo => {
             repo['topics'].map(topic => {
                 if (topic === githubConfig.keyTopic) {
-                    selectedRepos.push(new Repository(repo['name'], repo['description'], repo['language']))
+                    selectedRepos.push(new Repository(
+                        repo['name'], 
+                        repo['description'], 
+                        repo['language'], 
+                        repo['topics'].filter(function(value) {
+                            return value !== githubConfig.keyTopic;
+                        })
+                    ))
                 }
             })
         });
