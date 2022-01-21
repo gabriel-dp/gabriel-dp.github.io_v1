@@ -9,7 +9,7 @@ const AboutMe = ({innerRef}) => {
                 <MySelf>
                     <MyDescription>
                         <Header bg={'dark'} align={'flex-start'} title={'About Me'} subtitle={'Who is Gabriel?'}/>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur ipsam error in perspiciatis adipisci animi commodi magni dicta illum autem, ad libero beatae ratione vitae incidunt obcaecati nobis. Odio, ducimus? Recusandae explicabo eaque iure est delectus eos itaque perspiciatis vero quas sed officiis quod voluptate soluta aperiam, impedit expedita?</p>
+                        <p>A Enthusiastic of Robotics & Technology who started the developer career in 2019, during the High School with the Brazilian Robotics Olympiad (OBR). In addition to programming, I also have experience with Design and 3D Modeling due the F1 in Schools challenge.</p>
                     </MyDescription>
                     <MyPhoto>
                         <img src={require('../../assets/images/model.png')}/>

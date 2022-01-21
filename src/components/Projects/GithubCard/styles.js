@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.a`
     width: 100%;
     max-width: 25.5rem;
     height: 16.5rem;
@@ -11,6 +11,8 @@ export const CardContainer = styled.div`
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;  
 
     display: flex;
     justify-items: center;
@@ -25,6 +27,7 @@ export const CardContainer = styled.div`
             font-size: 0.75em;
         }
     }
+
 `;
 
 export const ImageCover = styled.div`
@@ -34,6 +37,7 @@ export const ImageCover = styled.div`
     overflow: hidden;
 
     img {
+        width: 100%;
         max-width: 100%;
     }
 `;
