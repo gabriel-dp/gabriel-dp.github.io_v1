@@ -12,7 +12,6 @@ const MainPage = ({ ToggleTheme }) => {
         <Screen>
             <NavBar/>
             <Home/>
-            <AboutMe/>
             <Skills/>
             <Projects/>
             <Footer/>

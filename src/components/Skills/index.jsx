@@ -32,7 +32,7 @@ const Skills = () => {
             <IconsContainer>
                 {
                     Object.keys(ICONS.others).map(other => (
-                        <SkillIcon className='skill' key={other} size={2}>
+                        <SkillIcon className='skill' key={other} size={2.25}>
                             <img src={ICONS.others[other]}/>
                         </SkillIcon>
                     ))

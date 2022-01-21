@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const CardContainer = styled.div`
     width: 21.25rem;
     height: 13.75rem;
-    margin: 1rem;
+    margin: 1.5rem 10%;
     border: 0.25em ${props => props.theme.colors.text} solid;
     border-radius: 1rem;
     position: relative;

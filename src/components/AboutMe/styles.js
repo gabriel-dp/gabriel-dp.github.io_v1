@@ -6,13 +6,18 @@ export const AboutMeTabContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6rem;
+    padding: 6rem 10rem;
+
+    @media (max-width: 750px) {
+        padding: 2rem 0;
+        padding-bottom: 4rem;
+    }
 `;
 
 export const MySelf = styled.div`
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     @media (max-width: 750px) {
         display: flex;

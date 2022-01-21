@@ -12,8 +12,7 @@ export const ProjectsTabContainer = styled.div`
 export const CardsContainer = styled.div`
     height: auto;
     width: 100%;
-    max-width: 750px;
-    background-color: ${props => props.theme.colors.primary};
+    max-width: 800px;
     padding-bottom: 2rem;
 
     display: grid;

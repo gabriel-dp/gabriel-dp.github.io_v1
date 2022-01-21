@@ -7,9 +7,16 @@ export const HomeTabContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
     position: relative;
+    padding: 0 10rem;
+
+    @media (max-width: 750px) {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 `;
 
 export const MainTitle = styled.div`
@@ -44,6 +51,8 @@ export const StyledArrow = styled(BiDownArrow)`
     font-size: 1.25rem;
     position: absolute;
     bottom: 7vh;
+    left: 50%;
+    transform: translate(-50%);
     transition: all 0.25s ease;
 
     :hover {
