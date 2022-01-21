@@ -10,7 +10,7 @@ import { Screen } from './styles';
 const MainPage = ({ ToggleTheme }) => {
     return (
         <Screen>
-            <NavBar/>
+            <NavBar ToggleTheme={ToggleTheme}/>
             <Home/>
             <AboutMe/>
             <Skills/>

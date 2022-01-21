@@ -1,14 +1,48 @@
-import { NavBarContainer, NavBarList, NavBarItem } from './styles';
+import { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 
-const NavBar = () => {
+import { NavBarContainer, NavBarDiv, NavBarList, NavBarItem, ThemeSwitch, SwitchIcon } from './styles';
+import Switch from 'react-switch';
+import { MdNightlightRound, MdWbSunny } from 'react-icons/md';
+
+const NavBar = ({ToggleTheme}) => {
+    const theme = useContext(ThemeContext)
+
     return (
-        <NavBarContainer>
-            <NavBarList>
-                <NavBarItem>About Me</NavBarItem>
-                <NavBarItem>Skills</NavBarItem>
-                <NavBarItem>Projects</NavBarItem>
-            </NavBarList>
-        </NavBarContainer>
+        <ThemeContext.Provider value={theme}>
+            <NavBarContainer>
+                <NavBarDiv>
+                    <NavBarList>
+                        <NavBarItem>About Me</NavBarItem>
+                        <NavBarItem>Skills</NavBarItem>
+                        <NavBarItem>Projects</NavBarItem>
+                    </NavBarList>
+                </NavBarDiv>
+                <ThemeSwitch>
+                    <Switch
+                        onChange={ToggleTheme}  
+                        checked={theme.title === 'dark'}
+                        checkedIcon={false}
+                        uncheckedIcon={false}
+                        offColor={theme.colors.gray}
+                        onColor={theme.colors.primary}
+                        handleDiameter={25}
+                        height={20}
+                        boxShadow="1px 1px 5px rgba(0, 0, 0, 0.75)"
+                        checkedHandleIcon={
+                            <SwitchIcon>
+                                <MdNightlightRound/>
+                            </SwitchIcon>
+                        }
+                        uncheckedHandleIcon={
+                            <SwitchIcon iconColor='gray'>
+                                <MdWbSunny/>
+                            </SwitchIcon>
+                        }
+                    />
+                </ThemeSwitch>
+            </NavBarContainer>
+        </ThemeContext.Provider>
     );
 }
 
