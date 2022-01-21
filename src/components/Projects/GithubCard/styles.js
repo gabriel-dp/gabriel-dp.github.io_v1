@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
     height: 16.5rem;
     margin: 0 1rem;
     margin-bottom: 2rem;
-    border: 0.25em ${props => props.theme.colors.text} solid;
+    border: 0.25em ${props => props.theme.colors.lightgray} solid;
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
@@ -18,7 +18,6 @@ export const CardContainer = styled.div`
 
     :hover {
         .description {
-            background-color: ${props => props.theme.colors.white};
             height: 65%;
         }
 
@@ -43,7 +42,7 @@ export const DescriptionContainer = styled.div`
     height: 35%;
     width: 100%;
     padding: 1em;
-    background-color: ${props => props.theme.colors.text};
+    background-color: ${props => props.theme.colors.lightgray};
     color: ${props => props.theme.colors.black};
     transition: all 0.25s ease;
     overflow: hidden;

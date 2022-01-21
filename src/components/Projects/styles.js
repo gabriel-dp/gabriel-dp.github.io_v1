@@ -25,15 +25,11 @@ export const CardsContainer = styled.div`
 
 export const SeeMore = styled.div`
     text-decoration: underline;
-    color: ${props => props.theme.colors.text};
-    margin-bottom: 2rem;
+    color: ${props => props.theme.title === 'dark' ? props.theme.colors.text : props.theme.colors.white};
 
-    
     a, a:hover, a:focus, a:active {
         text-decoration: none;
         color: inherit;
         font-size: 1rem;    
     }
-
-
 `;

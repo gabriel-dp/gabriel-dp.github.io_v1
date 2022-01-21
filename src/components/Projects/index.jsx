@@ -58,7 +58,7 @@ const Projects = () => {
     
     return (
         <ProjectsTabContainer>
-            <Header title={'Projects'} subtitle={'From Github'}/>
+            <Header bg={'dark'} title={'Projects'} subtitle={'From Github'}/>
             <CardsContainer>
                 {
                     repositories.map(repo => (

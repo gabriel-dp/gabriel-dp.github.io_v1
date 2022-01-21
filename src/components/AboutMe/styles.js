@@ -42,7 +42,7 @@ export const MyDescription = styled.div`
 
     p {
         font-size: 1rem;
-        color: ${props => props.theme.colors.text};
+        color: ${props => props.theme.colors.white};
     }
 
     @media (max-width: 900px) {

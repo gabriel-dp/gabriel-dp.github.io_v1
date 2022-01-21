@@ -1,10 +1,10 @@
 import { HeaderContainer, HeaderTitle, HeaderSubtitle } from './styles';
 
-const Header = ({ title, subtitle }) => {
+const Header = ({ title, subtitle, bg }) => {
     return (
         <HeaderContainer>
-            <HeaderTitle>{title}</HeaderTitle>
-            <HeaderSubtitle>{subtitle}</HeaderSubtitle>
+            <HeaderTitle bg={bg}>{title}</HeaderTitle>
+            <HeaderSubtitle bg={bg}>{subtitle}</HeaderSubtitle>
         </HeaderContainer>
     );
 }

@@ -22,7 +22,7 @@ export const IconsContainer = styled.div`
     width: 100%;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    background-color: ${props => props.theme.colors.secondary};
+    background-color: ${props => props.theme.title === 'dark' ? props.theme.colors.secondary : props.theme.colors.primary};
     margin-bottom: 2rem;
 
     display: flex;
