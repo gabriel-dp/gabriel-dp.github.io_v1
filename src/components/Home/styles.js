@@ -10,6 +10,11 @@ export const HomeTabContainer = styled.div`
     justify-content: space-between;
     position: relative;
     padding: 0 15%;
+    transition: all 0.5s ease;
+
+    @media (max-width: 900px) {
+        padding: 0 7%;
+    }
 
     @media (max-width: 750px) {
         padding: 0;
@@ -24,6 +29,7 @@ export const MainTitle = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    white-space: nowrap;
     
     h1 { 
         font-family: 'Oswald', sans-serif;
@@ -38,7 +44,7 @@ export const MainTitle = styled.div`
 `;
 
 export const Object3DContainer = styled.div`
-    height: 50%;
+    width: 50%;
     aspect-ratio: 1.25;
     overflow: hidden;
     border-radius: 100%;

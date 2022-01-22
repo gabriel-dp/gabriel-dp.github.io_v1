@@ -7,7 +7,7 @@ const Footer = () => {
             <WhoDid>
                 <h3>Made with love and work by Gabriel de Paula.</h3>
                 <h3>All rights reserved.</h3>
-                <a target='_blanck' href='URL HERE'>Website source code</a>
+                <a target='_blanck' href='https://github.com/gabrieldp23/Portfolio'>Website source code</a>
             </WhoDid>
             <FindMe>
                 {

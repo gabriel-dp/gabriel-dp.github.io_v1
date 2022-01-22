@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="91.44mm" height="162.56mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 9144 16256"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil6 {fill:none}
+    .fil1 {fill:#024059}
+    .fil0 {fill:#191E2D}
+    .fil2 {fill:#206E8C}
+    .fil4 {fill:#777777}
+    .fil3 {fill:#8B8B8B}
+    .fil5 {fill:#A8A8A8}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M2032.04 3894.69l5079.97 0c931.36,0 1693.35,761.99 1693.35,1693.35l0 5079.97c0,931.36 -761.99,1693.35 -1693.35,1693.35l-5079.97 0c-931.36,0 -1693.35,-761.99 -1693.35,-1693.35l0 -5079.97c0,-931.36 761.99,-1693.35 1693.35,-1693.35z"/>
+   </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M2032.04 3894.69l5079.97 0c931.36,0 1693.35,761.99 1693.35,1693.35l0 5079.97c0,931.36 -761.99,1693.35 -1693.35,1693.35l-5079.97 0c-931.36,0 -1693.35,-761.99 -1693.35,-1693.35l0 -5079.97c0,-931.36 761.99,-1693.35 1693.35,-1693.35z"/>
+  <g style="clip-path:url(#id0)">
+   <g id="_1940244653696">
+    <rect class="fil1" x="338.66" y="9140.43" width="5578.8" height="3220.87"/>
+    <polygon class="fil2" points="338.66,6836.2 9908.6,12361.34 5917.47,12361.34 338.66,9140.47 "/>
+    <g>
+     <polygon class="fil3" points="4572,6975.87 4572,9280.2 4572,11584.53 2576.4,10432.4 2576.4,5823.73 "/>
+     <polygon class="fil4" points="4572,6975.87 4572,9280.2 4572,11584.53 6567.6,10432.4 6567.6,5823.73 "/>
+     <rect class="fil5" transform="matrix(6.37022 -3.67787 6.93229 4.00238 2576.34 5823.7)" width="313.27" height="287.87"/>
+    </g>
+   </g>
+  </g>
+  <path class="fil6" d="M2032.04 3894.69l5079.97 0c931.36,0 1693.35,761.99 1693.35,1693.35l0 5079.97c0,931.36 -761.99,1693.35 -1693.35,1693.35l-5079.97 0c-931.36,0 -1693.35,-761.99 -1693.35,-1693.35l0 -5079.97c0,-931.36 761.99,-1693.35 1693.35,-1693.35z"/>
+ </g>
+</svg>
