@@ -9,7 +9,7 @@ import LightTheme from './styles/themes/light';
 
 function App() {
 
-	const[theme, setTheme] = usePersistedState('theme', DarkTheme);
+	const[theme, setTheme] = usePersistedState('PortfolioTheme', LightTheme);
 	const ToggleTheme = () => {
 		setTheme(theme.title === 'light' ? DarkTheme : LightTheme);
 	}
