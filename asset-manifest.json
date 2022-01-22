@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/Portfolio/static/js/main.f80d08bf.js",
+    "static/media/model.png": "/Portfolio/static/media/model.e64a5a3f57f3da2d1f5e.png",
+    "static/media/fusion360.jpg": "/Portfolio/static/media/fusion360.6ecebef4019ac9d63dea.jpg",
+    "static/media/styled-components.png": "/Portfolio/static/media/styled-components.da090b22905ecd34b164.png",
+    "static/media/legoev3.jpeg": "/Portfolio/static/media/legoev3.fd0556faa071ef5e11ca.jpeg",
+    "static/media/react.svg": "/Portfolio/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/arduino.svg": "/Portfolio/static/media/arduino.2498ca1764513d86cfa7e3fcf7c23ba8.svg",
+    "static/media/vscode.svg": "/Portfolio/static/media/vscode.f57bbf46dad2409e508cb50781867a39.svg",
+    "static/media/blender.svg": "/Portfolio/static/media/blender.a994b672f7161c5011748171ad4bd99c.svg",
+    "static/media/c-sharp.svg": "/Portfolio/static/media/c-sharp.e2c0510d2b743a87e7621b703ba07906.svg",
+    "static/media/python.svg": "/Portfolio/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
+    "static/media/html-5.svg": "/Portfolio/static/media/html-5.e7638e3676622c76a46ece6c46136fd4.svg",
+    "static/media/c-plusplus.svg": "/Portfolio/static/media/c-plusplus.c4a42e1361f15351e4445b53cde0aa8e.svg",
+    "static/media/css-3.svg": "/Portfolio/static/media/css-3.e7a9de36d9335d92932e93eb3b32deb9.svg",
+    "static/media/instagram.svg": "/Portfolio/static/media/instagram.42247778f2fcf86b94e363322a2e0e26.svg",
+    "static/media/git.svg": "/Portfolio/static/media/git.fd381642a8b14fec88b8d6df1ff25220.svg",
+    "static/media/javascript.svg": "/Portfolio/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
+    "static/media/github.svg": "/Portfolio/static/media/github.32d069a49dc3710594b5fd658771a3f0.svg",
+    "static/media/threejs.svg": "/Portfolio/static/media/threejs.a02bc572667de670fbfb2173c0331d05.svg",
+    "static/media/linkedin.svg": "/Portfolio/static/media/linkedin.16bea163b0d284e5ccfa5f28c8ad91d6.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.f80d08bf.js.map": "/Portfolio/static/js/main.f80d08bf.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f80d08bf.js"
+  ]
+}
