@@ -34,6 +34,11 @@ export const WhoDid = styled.div`
         font-size: 0.85rem;
         text-decoration: underline;
         color: inherit;
+        transition: color 0.25s ease;
+    }
+
+    a:hover {
+        color: #aaaaaa;
     }
 
     @media (max-width: 750px) {
@@ -60,6 +65,11 @@ export const FindMe = styled.div`
         img {
             max-height: 100%;
             margin: 0 0.5rem;
+            filter: invert(44%) sepia(1%) saturate(4385%) hue-rotate(5deg) brightness(88%) contrast(91%);
+            transition: filter 0.25s ease;
+            :hover {
+                filter: invert(88%) sepia(10%) saturate(7%) hue-rotate(339deg) brightness(78%) contrast(83%);
+            }
         }
     }
 `;
