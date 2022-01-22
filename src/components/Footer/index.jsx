@@ -1,4 +1,4 @@
-import { FooterTabContainer, WhoDid, FindMe, SocialMedia } from './styles';
+import { FooterTabContainer, WhoDid, FindMe } from './styles';
 import ICONS from './importIcons';
 
 const Footer = () => {

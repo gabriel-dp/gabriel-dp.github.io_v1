@@ -14,7 +14,7 @@ const Skills = ({innerRef}) => {
                     {
                         Object.keys(ICONS.langs).map(lang => (
                             <SkillIcon className='skill' key={lang} size={3.5}>
-                                <img src={ICONS.langs[lang]}/>
+                                <img src={ICONS.langs[lang]} alt={lang}/>
                             </SkillIcon>
                         ))
                     }
@@ -24,7 +24,7 @@ const Skills = ({innerRef}) => {
                     {
                         Object.keys(ICONS.fws).map(fw => (
                             <SkillIcon className='skill' key={fw} size={2.75}>
-                                <img src={ICONS.fws[fw]}/>
+                                <img src={ICONS.fws[fw]} alt={fw}/>
                             </SkillIcon>
                         ))
                     }
@@ -34,7 +34,7 @@ const Skills = ({innerRef}) => {
                     {
                         Object.keys(ICONS.others).map(other => (
                             <SkillIcon className='skill' key={other} size={2.25}>
-                                <img src={ICONS.others[other]}/>
+                                <img src={ICONS.others[other]} alt={other}/>
                             </SkillIcon>
                         ))
                     }

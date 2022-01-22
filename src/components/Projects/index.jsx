@@ -45,8 +45,8 @@ const Projects = ({innerRef}) => {
         }
 
         var selectedRepos = []
-        repos.map(repo => {
-            repo['topics'].map(topic => {
+        repos.forEach(repo => {
+            repo['topics'].forEach(topic => {
                 if (topic === githubConfig.keyTopic) {
                     selectedRepos.push(new Repository(
                         repo['name'], 

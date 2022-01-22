@@ -15,7 +15,7 @@ const repoUrl = `https://github.com/${githubConfig.username}/${repoData.name}/`;
                 <TagsContainer>
                     {
                         repoData.tags.map((tag) => (
-                            <TagItem>{tag}</TagItem>
+                            <TagItem key={tag}>{tag}</TagItem>
                         ))
                     }
                 </TagsContainer>

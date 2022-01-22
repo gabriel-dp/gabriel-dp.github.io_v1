@@ -12,7 +12,7 @@ const AboutMe = ({innerRef}) => {
                         <p>A Enthusiastic of Robotics & Technology who started the developer career in 2019, during the High School with the Brazilian Robotics Olympiad (OBR). In addition to programming, I also have experience with Design and 3D Modeling due the F1 in Schools challenge.</p>
                     </MyDescription>
                     <MyPhoto>
-                        <img src={require('../../assets/images/model.png')}/>
+                        <img src={require('../../assets/images/model.png')} alt='a handsome guy'/>
                     </MyPhoto>
                 </MySelf>
             </AboutMeTabContainer>
