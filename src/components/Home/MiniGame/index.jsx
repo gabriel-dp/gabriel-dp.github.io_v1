@@ -16,9 +16,9 @@ const MiniGame = () => {
                 renderer.setSize(showData.width, showData.height);
             }
             renderConfig();
-            //#endregion
+        //#endregion
             
-            //region CAMERA
+        //#region CAMERA
             var aspect = 1.25;
             var d = 50;
             const camera = new THREE.OrthographicCamera( - d * aspect, d * aspect, d, - d, 1, 1000 );
@@ -28,16 +28,17 @@ const MiniGame = () => {
             console.log(camera)
         //#endregion
 
-        //BACKGROUND
-        renderer.setClearColor(0x000000, 0);
+        //#region AMBIENT
+            //BACKGROUND
+            renderer.setClearColor(0x000000, 0);
 
-        //LIGHTS
-        const lightCentral = new THREE.DirectionalLight(0x777777, 2);
-        scene.add( lightCentral );
-        lightCentral.position.set(-50, 25 , 10);
+            //LIGHTS
+            const lightCentral = new THREE.DirectionalLight(0x777777, 2);
+            scene.add( lightCentral );
+            lightCentral.position.set(-50, 25 , 10);
+        //#endregion
 
         //#region OBJECTS
-            //3D OBJECTS
             const longGeometry = new THREE.BoxGeometry(300, 5, 14);
             const blueMaterial = new THREE.MeshPhongMaterial({color: 0x206E8C, emissive: 0x024059, wireframe: false});
             const littleCube = new THREE.BoxGeometry(7, 12, 7);
@@ -72,12 +73,13 @@ const MiniGame = () => {
         //RENDER
         renderer.render(scene, camera);
 
-        //Animation Variables
-        var startJump = 0;
-        var startFall = 0;
-        var isGameOn = false;
-        const Kjump = 0.01;
-        const Kfall = -0.2;
+        //#region Animation Variables
+            var startJump = 0;
+            var startFall = 0;
+            var isGameOn = false;
+            const Kjump = 0.01;
+            const Kfall = -0.2;
+        //#endregion
 
         function render () {
             renderer.render(scene, camera);
@@ -103,7 +105,7 @@ const MiniGame = () => {
                 }
             
                 function jump () {
-                    if (runner.position.y <= -17) {
+                    if (checkTouching(runner, track)) {
                         startJump = performance.now();
                     }
                 }
@@ -137,8 +139,6 @@ const MiniGame = () => {
                 }
 
                 show.addEventListener('click', () => handleClick());
-                //show.addEventListener('keydown', (event) => {console.log(event)})
-
             //#endregion
 
             renderConfig();

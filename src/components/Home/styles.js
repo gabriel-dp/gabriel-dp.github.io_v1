@@ -42,7 +42,7 @@ export const Object3DContainer = styled.div`
     aspect-ratio: 1.25;
     overflow: hidden;
     border-radius: 100%;
-
+    
     @media (max-width: 750px) {
         display: none;
     }
