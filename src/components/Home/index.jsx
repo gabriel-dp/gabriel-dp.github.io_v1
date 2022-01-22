@@ -1,4 +1,5 @@
-import { HomeTabContainer, MainTitle, Object3DContainer, StyledArrow } from './styles'
+import MiniGame from './MiniGame';
+import { HomeTabContainer, MainTitle, Object3DContainer, StyledArrow } from './styles';
 
 const Home = ({goTo, innerRef, nextRef}) => {
     return (
@@ -8,7 +9,9 @@ const Home = ({goTo, innerRef, nextRef}) => {
                     <h1>Gabriel de Paula</h1>
                     <h3>Programming and 3D Modelling</h3>
                 </MainTitle>
-                <Object3DContainer/>
+                <Object3DContainer>
+                    <MiniGame/>
+                </Object3DContainer>
                 <StyledArrow onClick={() => goTo(nextRef)}/>
             </HomeTabContainer>
         </div>

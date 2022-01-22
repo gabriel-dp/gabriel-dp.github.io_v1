@@ -38,8 +38,10 @@ export const MainTitle = styled.div`
 `;
 
 export const Object3DContainer = styled.div`
-    width: 40%;
     height: 50%;
+    aspect-ratio: 1.25;
+    overflow: hidden;
+    border-radius: 100%;
 
     @media (max-width: 750px) {
         display: none;
