@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const CardContainer = styled.a`
     width: 100%;
@@ -91,6 +92,7 @@ export const TagsContainer = styled.div`
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    position: relative;
 `;
 
 export const TagItem = styled.div`
@@ -101,4 +103,18 @@ export const TagItem = styled.div`
     padding: 0 1rem;
     border-radius: 1rem;
     white-space: nowrap;
+`;
+
+export const WebsiteButton = styled(FontAwesomeIcon)`
+    width: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    color: ${props => props.theme.colors.black};
+    transition: all 0.25s ease;
+
+    :hover {
+        color: ${props => props.theme.colors.gray};
+    }
 `;

@@ -36,10 +36,11 @@ const Projects = ({innerRef}) => {
         }
 
         class Repository {
-            constructor (name, description, language, tags) {
+            constructor (name, description, language, website, tags) {
                 this.name = name;
                 this.description = description;
                 this.language = language;
+                this.website = website;
                 this.tags = tags;
             }
         }
@@ -52,6 +53,7 @@ const Projects = ({innerRef}) => {
                         repo['name'], 
                         repo['description'], 
                         repo['language'], 
+                        repo['homepage'], 
                         repo['topics'].filter(function(value) {
                             return value !== githubConfig.keyTopic;
                         })
