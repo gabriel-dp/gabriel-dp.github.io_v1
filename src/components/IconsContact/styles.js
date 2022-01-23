@@ -12,7 +12,9 @@ export const StyledIconFA = styled(FontAwesomeIcon)`
     color: ${props => props.theme.colors.gray};
     transition: all 0.25s ease;
 
-    :hover {
-        color: ${props => props.theme.colors.primary};
+    @media (min-width: 750px) {
+        :hover {
+            color: ${props => props.theme.colors.primary};
+        }
     }
 `;
