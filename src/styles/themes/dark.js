@@ -7,7 +7,7 @@ const DarkTheme = {
         primary: '#206E8C',
         secondary: '#024059',
         black: '#333333',
-        gray: '#888888',
+        gray: '#999999',
         lightgray: '#dddddd',
         white: '#ffffff'
     }
