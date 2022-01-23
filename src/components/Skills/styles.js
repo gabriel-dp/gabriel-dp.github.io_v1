@@ -57,15 +57,13 @@ export const SingleSkill= styled.div`
     align-items: center;
     margin-top: 0.25rem;
 
-    @media (min-width: 750px) {
-        :hover {
-            .skill {
-                height: ${props => props.size + 0.5}rem;
-            }
+    :hover {
+        .skill {
+            height: ${props => props.size + 0.5}rem;
+        }
 
-            .title {
-                visibility: visible;
-            }
+        .title {
+            visibility: visible;
         }
     }
 `;
