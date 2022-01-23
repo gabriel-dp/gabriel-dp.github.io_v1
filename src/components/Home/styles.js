@@ -40,6 +40,7 @@ export const MainTitle = styled.div`
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 1.2em;
+        margin-bottom: 1.5rem;
     }
 `;
 

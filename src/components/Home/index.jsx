@@ -1,3 +1,4 @@
+import IconsContact from '../IconsContact/IconsContact';
 import MiniGame from './MiniGame';
 import { HomeTabContainer, MainTitle, Object3DContainer, StyledArrow } from './styles';
 
@@ -8,6 +9,7 @@ const Home = ({goTo, innerRef, nextRef}) => {
                 <MainTitle>
                     <h1>Gabriel de Paula</h1>
                     <h3>Programming and 3D Modelling</h3>
+                    <IconsContact/>
                 </MainTitle>
                 <Object3DContainer>
                     <MiniGame/>

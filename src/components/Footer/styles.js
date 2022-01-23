@@ -38,7 +38,7 @@ export const WhoDid = styled.div`
     }
 
     a:hover {
-        color: #aaaaaa;
+        color: ${props => props.theme.colors.primary};
     }
 
     @media (max-width: 750px) {
@@ -55,21 +55,16 @@ export const FindMe = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 
     @media (max-width: 750px) {
        justify-content: center;
     }
 
-    a {
-        display: flex;
-        img {
-            max-height: 100%;
-            margin: 0 0.5rem;
-            filter: invert(44%) sepia(1%) saturate(4385%) hue-rotate(5deg) brightness(88%) contrast(91%);
-            transition: filter 0.25s ease;
-            :hover {
-                filter: invert(88%) sepia(10%) saturate(7%) hue-rotate(339deg) brightness(78%) contrast(83%);
-            }
-        }
+    a, a:hover, a:focus, a:active {
+        font-size: 0.85rem;
+        text-decoration: underline;
+        color: inherit;
+        transition: color 0.25s ease;
     }
 `;

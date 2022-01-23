@@ -1,5 +1,5 @@
+import IconsContact from '../IconsContact/IconsContact';
 import { FooterTabContainer, WhoDid, FindMe } from './styles';
-import ICONS from './importIcons';
 
 const Footer = () => {
     return (
@@ -10,13 +10,7 @@ const Footer = () => {
                 <a target='_blanck' href='https://github.com/gabrieldp23/Portfolio'>Website source code</a>
             </WhoDid>
             <FindMe>
-                {
-                    Object.keys(ICONS).map(url => (
-                        <a key={url} target='_blanck' href={url}>
-                            <img src={ICONS[url]} alt={ICONS[url]}/>
-                        </a>
-                    ))
-                }
+                <IconsContact/>
             </FindMe>
         </FooterTabContainer>
     );
