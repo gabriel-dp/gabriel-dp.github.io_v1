@@ -9,10 +9,17 @@ export const SkillsTabContainer = styled.div`
     transition: all 0.2s ease;
     padding: 4rem 15%;
 
-    @media (max-width: 650px) {
+    @media (max-width: 775px) {
         padding : 4rem 10%;
     }
 
+`;
+
+export const SkillsClassContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export const SkillsClassTitle = styled.h2`
@@ -28,7 +35,7 @@ export const IconsContainer = styled.div`
     padding: 1rem 2rem;
     border-radius: 1rem;
     background-color: ${props => props.theme.title === 'dark' ? props.theme.colors.secondary : props.theme.colors.primary};
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 
     display: flex;
     flex-direction: row;
@@ -40,6 +47,29 @@ export const IconsContainer = styled.div`
     }
 `;
 
+export const SingleSkill= styled.div`
+    height: 100%;
+    width: 100%;
+    max-width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.25rem;
+
+    @media (min-width: 750px) {
+        :hover {
+            .skill {
+                height: ${props => props.size + 0.5}rem;
+            }
+
+            .title {
+                visibility: visible;
+            }
+        }
+    }
+`;
+
 export const SkillIcon = styled.div`
     height: ${props => props.size}rem;
     aspect-ratio: 1;
@@ -47,16 +77,17 @@ export const SkillIcon = styled.div`
     justify-content: center;
     margin: 1rem 0.625em;
     transition: all 0.25s ease;
-
+    
     img {
         max-height: 100%;
         max-width: 100%;
         object-fit: contain;
     }
+`;
 
-    @media (min-width: 750px) {
-        :hover {
-            height: ${props => props.size + 1}rem;
-        }
-    }
+export const SkillName = styled.p`
+    color: ${props => props.theme.colors.white};
+    font-size: 0.7rem;
+    visibility: hidden;
+    white-space: nowrap;
 `;

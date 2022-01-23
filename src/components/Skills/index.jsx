@@ -1,44 +1,34 @@
-import { SkillsTabContainer, SkillsClassTitle, IconsContainer, SkillIcon } from './styles';
+import { SkillsTabContainer, SkillsClassContainer, SkillsClassTitle, IconsContainer, SingleSkill, SkillIcon, SkillName } from './styles';
 import ICONS from './importIcons';
 
 import Header from '../Header';
 
 const Skills = ({innerRef}) => {
-
     return (
         <div ref={innerRef}>
             <SkillsTabContainer>
                 <Header title={'Skills'} subtitle={'In progress...'}/>
-                <SkillsClassTitle size={1.75}>Languages</SkillsClassTitle>
-                <IconsContainer>
-                    {
-                        Object.keys(ICONS.langs).map(lang => (
-                            <SkillIcon className='skill' key={lang} size={3.5}>
-                                <img src={ICONS.langs[lang]} alt={lang} title={lang}/>
-                            </SkillIcon>
-                        ))
-                    }
-                </IconsContainer>
-                <SkillsClassTitle size={1.5}>Frameworks & Libraries</SkillsClassTitle>
-                <IconsContainer>
-                    {
-                        Object.keys(ICONS.fws).map(fw => (
-                            <SkillIcon className='skill' key={fw} size={2.75}>
-                                <img src={ICONS.fws[fw]} alt={fw} title={fw}/>
-                            </SkillIcon>
-                        ))
-                    }
-                </IconsContainer>
-                <SkillsClassTitle size={1.25}>Others</SkillsClassTitle>
-                <IconsContainer>
-                    {
-                        Object.keys(ICONS.others).map(other => (
-                            <SkillIcon className='skill' key={other} size={2.25}>
-                                <img src={ICONS.others[other]} alt={other} title={other}/>
-                            </SkillIcon>
-                        ))
-                    }
-                </IconsContainer>
+                {
+                    Object.keys(ICONS).map((title) => (
+                        <SkillsClassContainer key={title}>
+                            <SkillsClassTitle size={ICONS[title]['sizes']['title']}>{title}</SkillsClassTitle>
+                            <IconsContainer>
+                                {
+                                    Object.keys(ICONS[title]).filter(function(value) {
+                                        return value !== 'sizes';
+                                    }).map(lang => (
+                                        <SingleSkill key={lang} size={ICONS[title]['sizes']['icon']}>
+                                            <SkillIcon className='skill' size={ICONS[title]['sizes']['icon']}>
+                                                <img src={ICONS[title][lang]} alt={lang}/>
+                                            </SkillIcon>
+                                            <SkillName className='title'>{lang}</SkillName>
+                                        </SingleSkill>
+                                    ))
+                                }
+                            </IconsContainer>
+                        </SkillsClassContainer>
+                    ))
+                }
             </SkillsTabContainer>
         </div>
     );
