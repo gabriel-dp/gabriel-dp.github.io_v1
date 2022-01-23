@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
     align-items: ${props => props.align};
 `;
 
-export const HeaderTitle = styled.h1`
+export const HeaderTitle = styled.h3`
     font-size: 3rem;
     color: ${props => props.bg === 'dark' ? props.theme.colors.white : props.theme.colors.text};
     font-family: 'Oswald', sans-serif;

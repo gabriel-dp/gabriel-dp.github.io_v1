@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <FooterTabContainer>
             <WhoDid>
-                <h3>Made with love and work by Gabriel de Paula.</h3>
-                <h3>All rights reserved.</h3>
+                <p>Made with love and work by Gabriel de Paula.</p>
+                <p>All rights reserved.</p>
                 <a target='_blanck' href='https://github.com/gabrieldp23/Portfolio'>Website source code</a>
             </WhoDid>
             <FindMe>

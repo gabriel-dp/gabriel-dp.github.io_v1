@@ -10,7 +10,7 @@ const GithubCard = ({ repoData, githubConfig }) => {
             <LanguageContainer className='language'>{repoData.language}</LanguageContainer>
             <DescriptionContainer className='description'>
                 <div>
-                    <h2>{repoData.name}</h2>
+                    <h4>{repoData.name}</h4>
                     <p>{repoData.description}</p>
                 </div>
                 <TagsContainer>

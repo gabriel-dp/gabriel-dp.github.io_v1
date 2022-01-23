@@ -36,7 +36,7 @@ export const MainTitle = styled.div`
         font-size: 3em;
     }
 
-    h3 {
+    h2 {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 1.2em;

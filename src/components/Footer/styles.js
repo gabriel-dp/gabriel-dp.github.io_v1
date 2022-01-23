@@ -24,7 +24,7 @@ export const WhoDid = styled.div`
     color: ${props => props.theme.colors.gray};
     white-space: nowrap;
     
-    h3 {
+    p {
         font-size: 1rem;
         font-weight: 400;
         margin-bottom: 0.1rem;

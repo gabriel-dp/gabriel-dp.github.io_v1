@@ -22,7 +22,7 @@ export const SkillsClassContainer = styled.div`
     align-items: center;
 `;
 
-export const SkillsClassTitle = styled.h2`
+export const SkillsClassTitle = styled.h3`
     font-size: ${props => props.size}rem;
     color: ${props => props.theme.colors.text};
     font-family: 'Oswald', sans-serif;

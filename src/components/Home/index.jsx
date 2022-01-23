@@ -8,7 +8,7 @@ const Home = ({goTo, innerRef, nextRef}) => {
             <HomeTabContainer>
                 <MainTitle>
                     <h1>Gabriel de Paula</h1>
-                    <h3>Programming and 3D Modelling</h3>
+                    <h2>Programming and 3D Modelling</h2>
                     <IconsContact/>
                 </MainTitle>
                 <Object3DContainer>

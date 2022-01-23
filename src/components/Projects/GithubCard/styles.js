@@ -61,7 +61,7 @@ export const DescriptionContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     
-    h2 {
+    h4 {
         font-size: 1em;
         margin-bottom: 0.15em;
         font-family: 'Oswald', sans-serif;
