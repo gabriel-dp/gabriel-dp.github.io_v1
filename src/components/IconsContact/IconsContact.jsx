@@ -21,12 +21,11 @@ const IconsContact = () => {
     return (
         <IconsContainer>
             {
-                socialMediaIcons.map((media, index) => (
-                    <a target='_blanck' href={media['url']}>
+                socialMediaIcons.map((media) => (
+                    <a key={media['url']} target='_blanck' href={media['url']}>
                         <StyledIconFA 
-                            key={index} 
                             icon={media['icon']} 
-                            iconSize={2}
+                            iconsize={2}
                         />
                     </a>
                 ))

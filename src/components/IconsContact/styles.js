@@ -8,7 +8,7 @@ export const IconsContainer = styled.div`
 
 export const StyledIconFA = styled(FontAwesomeIcon)`
     margin: 0 0.75rem;
-    font-size: ${props => props.iconSize}rem;
+    font-size: ${props => props.iconsize}rem;
     color: ${props => props.theme.colors.gray};
     transition: all 0.25s ease;
 

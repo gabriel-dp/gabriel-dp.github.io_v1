@@ -16,22 +16,31 @@ export const MySelf = styled.div`
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const MyPhoto = styled.div`
     width: 100%;
     margin-right: 10%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.25s ease;
     
     img {
         max-width: 20rem;
     }
 
     @media (max-width: 900px) {
-        display: none;
+        margin: 0;
+        margin-top: 4rem;
+        img {
+            max-width: 15rem;
+        }
     }
 `;
 
