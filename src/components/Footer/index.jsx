@@ -7,7 +7,7 @@ const Footer = () => {
             <WhoDid>
                 <p>Made with love and work by Gabriel de Paula.</p>
                 <p>All rights reserved.</p>
-                <a target='_blanck' href='https://github.com/gabrieldp23/Portfolio'>Website source code</a>
+                <a aria-label='Source code' target='_blanck' href='https://github.com/gabrieldp23/Portfolio'>Website source code</a>
             </WhoDid>
             <FindMe>
                 <IconsContact/>

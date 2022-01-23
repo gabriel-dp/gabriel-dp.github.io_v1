@@ -82,7 +82,7 @@ const Projects = ({innerRef}) => {
                     }
                 </CardsContainer>
                 <SeeMore>
-                    <a target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>
+                    <a aria-label='More Projects' target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>
                         See more projects
                     </a>
                 </SeeMore>

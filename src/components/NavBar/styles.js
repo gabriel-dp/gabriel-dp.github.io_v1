@@ -88,7 +88,7 @@ export const HoverAnimation = styled.a`
     }
 `;
 
-export const ThemeSwitch  = styled.div`
+export const ThemeSwitch  = styled.label`
     display: flex;
     justify-content: flex-start;
     align-items: center;

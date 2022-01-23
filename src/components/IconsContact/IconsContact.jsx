@@ -22,7 +22,7 @@ const IconsContact = () => {
         <IconsContainer>
             {
                 socialMediaIcons.map((media) => (
-                    <a key={media['url']} target='_blanck' href={media['url']}>
+                    <a key={media['url']} target='_blanck' href={media['url']} aria-label={media} >
                         <StyledIconFA 
                             icon={media['icon']} 
                             iconsize={2}
