@@ -76,7 +76,8 @@ export const DescriptionContainer = styled.div`
 export const LanguageContainer = styled.div`
     padding: 0.4em 1.25em;
     background-color: ${props => props.theme.colors.black};
-    color: white;
+    color: ${props => props.theme.colors.white};
+    box-shadow: 0 0 5px ${props => props.theme.colors.gray};
     font-size: 0.8em;
     transition: all 0.25s ease;
     border-radius: 1em;
