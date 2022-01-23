@@ -103,3 +103,7 @@ export const SwitchIcon = styled.div`
     align-items:center;
     color: ${props => props.iconColor === 'gray' ? props.theme.colors.gray : props.theme.colors.primary};
 `;
+
+export const FakeLabel = styled.label`
+    font-size: 1px;
+`;

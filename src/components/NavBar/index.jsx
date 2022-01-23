@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 
-import { NavBarContainer, NavBarDiv, NavBarList, NavBarItem, ThemeSwitch, SwitchIcon, HoverAnimation} from './styles';
+import { NavBarContainer, NavBarDiv, NavBarList, NavBarItem, ThemeSwitch, SwitchIcon, HoverAnimation, FakeLabel} from './styles';
 import Switch from 'react-switch';
 import { MdNightlightRound, MdWbSunny } from 'react-icons/md';
 
@@ -20,7 +20,10 @@ const NavBar = ({ToggleTheme, goTo, homeRef, aboutmeRef, skillsRef, projectsRef}
                     </NavBarList>
                 </NavBarDiv>
                 <ThemeSwitch>
+                    <FakeLabel htmlFor="reactswitch">.</FakeLabel>
                     <Switch
+                        aria-labelledby='reactswitch'
+                        className='reactswitch'
                         onChange={ToggleTheme}  
                         checked={theme.title === 'dark'}
                         checkedIcon={false}
