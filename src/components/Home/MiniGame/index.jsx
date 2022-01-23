@@ -25,7 +25,6 @@ const MiniGame = () => {
             
             camera.position.set(50, 50, 50); 
             camera.lookAt(scene.position); 
-            console.log(camera)
         //#endregion
 
         //#region AMBIENT
