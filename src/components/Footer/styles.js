@@ -37,15 +37,17 @@ export const WhoDid = styled.div`
         transition: color 0.25s ease;
     }
 
+    @media (min-width: 750px) {
+        a:hover {
+            color: ${props => props.theme.colors.primary};
+        }
+    }
+    
     @media (max-width: 750px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-
-        a:hover {
-            color: ${props => props.theme.colors.primary};
-        }
     }
 `;
 
