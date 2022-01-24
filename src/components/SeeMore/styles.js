@@ -21,7 +21,7 @@ export const SeeMoreContainer = styled.div`
                 top: 100%;
                 left: 0;
                 background: ${props => props.theme.colors.white};
-                transition: transform 0.5s;
+                transition: transform 0.25s;
                 transform: scaleX(0);
                 transform-origin: right;
             }
