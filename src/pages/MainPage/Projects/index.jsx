@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-import Header from '../Header';
+import Header from '../../../components/Header';
 import GithubCard from './GithubCard';
 
 import { ProjectsTabContainer, CardsContainer, SeeMore } from './styles';

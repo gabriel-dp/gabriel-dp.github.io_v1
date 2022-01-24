@@ -1,7 +1,7 @@
 import { SkillsTabContainer, SkillsClassContainer, SkillsClassTitle, IconsContainer, SingleSkill, SkillIcon, SkillName } from './styles';
 import ICONS from './importIcons';
 
-import Header from '../Header';
+import Header from '../../../components/Header';
 
 const Skills = ({innerRef}) => {
     return (

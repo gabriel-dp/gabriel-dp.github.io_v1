@@ -1,4 +1,4 @@
-import IconsContact from '../IconsContact/IconsContact';
+import IconsContact from '../../../components/IconsContact';
 import MiniGame from './MiniGame';
 import { HomeTabContainer, MainTitle, Object3DContainer, StyledArrow } from './styles';
 

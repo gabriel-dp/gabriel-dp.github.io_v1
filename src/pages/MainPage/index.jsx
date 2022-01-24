@@ -1,10 +1,10 @@
 import { useRef } from 'react';
 
 import NavBar from '../../components/NavBar';
-import Home from '../../components/Home';
-import AboutMe from '../../components/AboutMe';
-import Skills from '../../components/Skills';
-import Projects from '../../components/Projects';
+import Home from './Home';
+import AboutMe from './AboutMe';
+import Skills from './Skills';
+import Projects from './Projects';
 import Footer from '../../components/Footer';
 
 import { Screen } from './styles';

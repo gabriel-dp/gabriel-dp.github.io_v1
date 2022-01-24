@@ -1,4 +1,4 @@
-import IconsContact from '../IconsContact/IconsContact';
+import IconsContact from '../IconsContact/';
 import { FooterTabContainer, WhoDid, FindMe } from './styles';
 
 const Footer = () => {
