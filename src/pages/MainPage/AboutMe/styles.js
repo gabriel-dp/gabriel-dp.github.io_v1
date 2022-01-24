@@ -33,10 +33,19 @@ export const MyPhoto = styled.div`
     img {
         width: 100%;
         max-width: 18rem;
+        z-index: 0;
     }
 
-    :hover {
-        background-color: ${props => props.theme.colors.lightgray}CC;
+    &::before {
+        --size: 20rem;
+        content: '';
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        background: radial-gradient(circle closest-side, ${props => props.theme.colors.lightgray}55, transparent);
+        transition: all 0.25s ease-in-out;
     }
 `;
 
