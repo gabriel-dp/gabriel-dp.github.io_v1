@@ -1,8 +1,10 @@
+import goTo from '../../../utils/goTo';
+
 import IconsContact from '../../../components/IconsContact';
 import MiniGame from './MiniGame';
 import { HomeTabContainer, MainTitle, Object3DContainer, StyledArrow } from './styles';
 
-const Home = ({goTo, innerRef, nextRef}) => {
+const Home = ({innerRef, nextRef}) => {
     return (
         <div ref={innerRef}>
             <HomeTabContainer>

@@ -1,8 +1,14 @@
-const About = () => {
+import NavBar from '../../components/NavBar';
+
+import { Screen } from './styles';
+
+const About = ({ ToggleTheme }) => {
+    
+
     return (
-        <>
-            Test
-        </>
+        <Screen>
+            <NavBar ToggleTheme={ToggleTheme}/>
+        </Screen>
     );
 }
 

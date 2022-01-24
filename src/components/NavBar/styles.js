@@ -46,7 +46,7 @@ export const NavBarItem = styled.li`
     display: none;
     transition: font-size 0.1s ease;
 
-    &.home {
+    &.Home {
         display: block
     }
 

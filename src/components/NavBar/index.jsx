@@ -1,22 +1,40 @@
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ThemeContext } from 'styled-components';
+import goTo from '../../utils/goTo';
 
 import { NavBarContainer, NavBarDiv, NavBarList, NavBarItem, ThemeSwitch, SwitchIcon, HoverAnimation, FakeLabel} from './styles';
 import Switch from 'react-switch';
 import { MdNightlightRound, MdWbSunny } from 'react-icons/md';
 
-const NavBar = ({ToggleTheme, goTo, homeRef, aboutmeRef, skillsRef, projectsRef}) => {
-    const theme = useContext(ThemeContext)
+const NavBar = ({ ToggleTheme, refs }) => {
+    const theme = useContext(ThemeContext);
+    const navigate = useNavigate();
 
     return (
         <ThemeContext.Provider value={theme}>
             <NavBarContainer>
                 <NavBarDiv>
                     <NavBarList>
-                        <NavBarItem onClick={() => goTo(homeRef)} className='home'><HoverAnimation>Home</HoverAnimation></NavBarItem>
-                        <NavBarItem onClick={() => goTo(aboutmeRef)}><HoverAnimation>About Me</HoverAnimation></NavBarItem>
-                        <NavBarItem onClick={() => goTo(skillsRef)}><HoverAnimation>Skills</HoverAnimation></NavBarItem>
-                        <NavBarItem onClick={() => goTo(projectsRef)}><HoverAnimation>Projects</HoverAnimation></NavBarItem>
+                        {
+                            refs ?
+                                Object.keys(refs).map(title => (
+                                    <NavBarItem 
+                                        onClick={() => goTo(refs[title])}
+                                        className={title}
+                                        key={title}
+                                    >
+                                        <HoverAnimation>{title}</HoverAnimation>
+                                    </NavBarItem>
+                                ))
+                            : 
+                                <NavBarItem 
+                                    onClick={() => navigate('/portfolio')}
+                                    className='Home'
+                                >
+                                    <HoverAnimation>Back</HoverAnimation>
+                                </NavBarItem>
+                        }
                     </NavBarList>
                 </NavBarDiv>
                 <ThemeSwitch>

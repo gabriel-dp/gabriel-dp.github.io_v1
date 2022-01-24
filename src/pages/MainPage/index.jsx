@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 import NavBar from '../../components/NavBar';
 import Home from './Home';
@@ -16,14 +16,17 @@ const MainPage = ({ ToggleTheme }) => {
     const skillsRef = useRef(null);
     const projectsRef = useRef(null);
 
-    const goTo = (ref) => {
-        ref.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+    const refs = {
+        'Home' : homeRef,
+        'About Me' : aboutmeRef,
+        'Skills' : skillsRef,
+        'Projects' : projectsRef
     }
 
     return (
         <Screen>
-            <NavBar ToggleTheme={ToggleTheme} goTo={goTo} homeRef={homeRef} aboutmeRef={aboutmeRef} skillsRef={skillsRef} projectsRef={projectsRef}/>
-            <Home goTo={goTo} innerRef={homeRef} nextRef={aboutmeRef}/>
+            <NavBar ToggleTheme={ToggleTheme} refs={refs}/>
+            <Home innerRef={homeRef} nextRef={aboutmeRef}/>
             <AboutMe innerRef={aboutmeRef}/>
             <Skills innerRef={skillsRef}/>
             <Projects innerRef={projectsRef}/>
