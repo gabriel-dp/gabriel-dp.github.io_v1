@@ -32,5 +32,9 @@ export const SeeMoreContainer = styled.div`
                 transform-origin: left;
             }
         }
+
+        @media (max-width: 749px) {
+            text-decoration: underline;
+        }
     }
 `;

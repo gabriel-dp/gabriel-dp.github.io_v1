@@ -5,6 +5,15 @@ export const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: default;
+
+    @media (min-width: 750px) {
+        :hover {
+            h3, h4 {
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
 `;
 
 export const HeaderTitle = styled.h3`
@@ -12,6 +21,7 @@ export const HeaderTitle = styled.h3`
     color: ${props => props.bg === 'dark' ? props.theme.colors.white : props.theme.colors.text};
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    transition: all 0.25s;
 `;
 
 export const HeaderSubtitle = styled.h4`
@@ -19,4 +29,5 @@ export const HeaderSubtitle = styled.h4`
     color: ${props => props.bg === 'dark' ? props.theme.colors.white : props.theme.colors.text};
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    transition: all 0.25s;
 `;
