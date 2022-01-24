@@ -22,14 +22,14 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route 
-						path='/' 
+						path='/portfolio'
 						exact
 						element={
 							<MainPage ToggleTheme={ToggleTheme}/>
 						}
 					/>
 					<Route 
-						path='/about' 
+						path='/portfolio/about' 
 						exact
 						element={
 							<About ToggleTheme={ToggleTheme}/>

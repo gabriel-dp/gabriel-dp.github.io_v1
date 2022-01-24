@@ -1,5 +1,3 @@
-import { useNavigate } from 'react-router-dom';
-
 import Header from '../../../components/Header';
 import SeeMore from '../../../components/SeeMore';
 
@@ -28,7 +26,7 @@ const AboutMe = ({innerRef}) => {
                 <MyDescription>
                     <p>A Enthusiastic of Robotics & Technology who started the developer career in 2019, during the High School with the Brazilian Robotics Olympiad (OBR). In addition to programming, I also have experience with Design and 3D Modeling due the F1 in Schools challenge.</p>
                 </MyDescription>
-                <SeeMore url='/about'>
+                <SeeMore url='/about' aria-label='More Projects'>
                     <a aria-label='More Projects'>
                         See more about me
                     </a>
