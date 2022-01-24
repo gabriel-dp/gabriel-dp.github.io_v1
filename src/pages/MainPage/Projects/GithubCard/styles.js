@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const CardContainer = styled.a`
     width: 100%;
@@ -106,14 +105,18 @@ export const TagItem = styled.div`
     white-space: nowrap;
 `;
 
-export const WebsiteButton = styled(FontAwesomeIcon)`
+export const WebsiteButton = styled.button`
     width: 2rem;
+    height: 1rem;
+    font-size: 0.9rem;
     position: absolute;
     bottom: 0;
     right: 0;
     border: none;
     color: ${props => props.theme.colors.black};
+    background-color: transparent;
     transition: all 0.25s ease;
+    cursor: pointer;
 
     :hover {
         color: ${props => props.theme.colors.gray};

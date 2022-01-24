@@ -1,19 +1,19 @@
 import { IconsContainer, StyledIconFA } from './styles';
-import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 const IconsContact = () => {
 
     const socialMediaIcons = [
         {
-            'icon': faGithub,
+            'icon': <FaGithub/>,
             'url': 'https://github.com/gabrieldp23',
         },
         {
-            'icon': faLinkedin,
+            'icon': <FaLinkedin/>,
             'url': 'https://www.linkedin.com/in/gabriel-meira-041869166/',
         },
         {
-            'icon': faInstagram,
+            'icon': <FaInstagram/>,
             'url': 'https://www.instagram.com/gabs_dp_/',
         },
     ];
@@ -23,10 +23,9 @@ const IconsContact = () => {
             {
                 socialMediaIcons.map((media) => (
                     <a key={media['url']} target='_blanck' href={media['url']} aria-label={media} >
-                        <StyledIconFA 
-                            icon={media['icon']} 
-                            iconsize={2}
-                        />
+                        <StyledIconFA>
+                            {media['icon']}
+                        </StyledIconFA>
                     </a>
                 ))
             }

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const AboutMeTabContainer = styled.div`
     width: 100%;
@@ -72,9 +71,10 @@ export const MyDetails = styled.div`
     }
 `;
 
-export const StyledIconFA = styled(FontAwesomeIcon).attrs({
+export const StyledIconFA = styled.div.attrs({
     className: 'icon'
 })`
+    display: inline-block;
     font-size: 1.2rem;
     color: ${props => props.theme.colors.white};
     transition: all 0.5s ease-in-out;

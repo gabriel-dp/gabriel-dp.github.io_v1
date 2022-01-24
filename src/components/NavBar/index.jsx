@@ -5,7 +5,7 @@ import goTo from '../../utils/goTo';
 
 import { NavBarContainer, NavBarDiv, NavBarList, NavBarItem, ThemeSwitch, SwitchIcon, HoverAnimation, FakeLabel} from './styles';
 import Switch from 'react-switch';
-import { MdNightlightRound, MdWbSunny } from 'react-icons/md';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 const NavBar = ({ ToggleTheme, refs }) => {
     const theme = useContext(ThemeContext);
@@ -53,12 +53,12 @@ const NavBar = ({ ToggleTheme, refs }) => {
                         boxShadow="1px 1px 5px rgba(0, 0, 0, 0.75)"
                         checkedHandleIcon={
                             <SwitchIcon>
-                                <MdNightlightRound/>
+                                <FaMoon/>
                             </SwitchIcon>
                         }
                         uncheckedHandleIcon={
                             <SwitchIcon iconColor='gray'>
-                                <MdWbSunny/>
+                                <FaSun/>
                             </SwitchIcon>
                         }
                     />

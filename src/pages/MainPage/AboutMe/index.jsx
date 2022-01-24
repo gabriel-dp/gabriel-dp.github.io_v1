@@ -2,7 +2,7 @@ import Header from '../../../components/Header';
 import SeeMore from '../../../components/SeeMore';
 
 import { AboutMeTabContainer, MySelf, MyPhoto, MyDetails, StyledIconFA , MyDescription} from './styles';
-import { faHourglassHalf, faMapMarkerAlt, faGraduationCap, faBasketballBall  } from '@fortawesome/free-solid-svg-icons';
+import { FaHourglassHalf, FaMapMarkerAlt, FaGraduationCap, FaBasketballBall  } from 'react-icons/fa';
 
 const AboutMe = ({innerRef}) => {
 
@@ -14,10 +14,10 @@ const AboutMe = ({innerRef}) => {
                 <Header bg={'dark'} bottom={2} title={'About Me'} subtitle={'Who is Gabriel?'}/>
                 <MySelf>
                     <MyDetails>
-                        <p><StyledIconFA icon={faHourglassHalf}/>{myAge} years old</p>
-                        <p><StyledIconFA icon={faMapMarkerAlt}/>Brazil &nbsp;//&nbsp; Vitória da Conquista - BA</p>
-                        <p><StyledIconFA icon={faGraduationCap}/>Future Computer Scientist</p>
-                        <p><StyledIconFA icon={faBasketballBall}/>Basketball player - 23</p>
+                        <p><StyledIconFA><FaHourglassHalf/></StyledIconFA>{myAge} years old</p>
+                        <p><StyledIconFA><FaMapMarkerAlt/></StyledIconFA>Brazil &nbsp;//&nbsp; Vitória da Conquista - BA</p>
+                        <p><StyledIconFA><FaGraduationCap/></StyledIconFA>Future Computer Scientist</p>
+                        <p><StyledIconFA><FaBasketballBall/></StyledIconFA>Basketball player - 23</p>
                     </MyDetails>
                     <MyPhoto>
                         <img src={require('../../../assets/images/model-circle.png')} alt='a handsome guy'/>

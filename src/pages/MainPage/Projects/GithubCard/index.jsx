@@ -1,5 +1,5 @@
 import { CardContainer, ImageCover, DescriptionContainer, LanguageContainer, TagsContainer, TagItem, WebsiteButton } from './styles'
-import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { FaLink } from 'react-icons/fa';
 
 const GithubCard = ({ repoData, githubConfig }) => {
     const repoUrl = `https://github.com/${githubConfig.username}/${repoData.name}/`;
@@ -19,7 +19,7 @@ const GithubCard = ({ repoData, githubConfig }) => {
                             <TagItem key={tag}>{tag}</TagItem>
                             ))
                     }
-                    {repoData.website !== '' ? <WebsiteButton onClick={(e) => {window.open(repoData.website, "_blanck"); e.preventDefault()}} icon={faLink}/> : <></>}
+                    {repoData.website !== '' ? <WebsiteButton onClick={(e) => {window.open(repoData.website, "_blanck"); e.preventDefault()}}><FaLink/></WebsiteButton> : <></>}
                 </TagsContainer>
             </DescriptionContainer>
             <ImageCover><img src={repoCoverUrl} alt='portfolio-cover'/></ImageCover>
