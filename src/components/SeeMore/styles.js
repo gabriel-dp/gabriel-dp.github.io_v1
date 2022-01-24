@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SeeMoreContainer = styled.div`
     color: ${props => props.theme.colors.white};
+    cursor: pointer;
 
     a, a:hover, a:focus, a:active {
         text-decoration: none;

@@ -1,6 +1,8 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import usePersistedState from './utils/usePersistedState';
 
 import MainPage from './pages/MainPage';
+import About from './pages/About';
 
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/global';
@@ -17,9 +19,24 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle/>
-			<MainPage
-				ToggleTheme={ToggleTheme}
-			/>
+			<BrowserRouter>
+				<Routes>
+					<Route 
+						path='/' 
+						exact
+						element={
+							<MainPage ToggleTheme={ToggleTheme}/>
+						}
+					/>
+					<Route 
+						path='/about' 
+						exact
+						element={
+							<About ToggleTheme={ToggleTheme}/>
+						}
+					/>
+				</Routes>
+			</BrowserRouter>
 		</ThemeProvider>
 	);
 }

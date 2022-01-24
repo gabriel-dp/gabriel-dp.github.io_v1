@@ -1,8 +1,10 @@
-import { AboutMeTabContainer, MySelf, MyPhoto, MyDetails, StyledIconFA , MyDescription} from './styles';
-import { faHourglassHalf, faMapMarkerAlt, faGraduationCap, faBasketballBall  } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 import Header from '../../../components/Header';
 import SeeMore from '../../../components/SeeMore';
+
+import { AboutMeTabContainer, MySelf, MyPhoto, MyDetails, StyledIconFA , MyDescription} from './styles';
+import { faHourglassHalf, faMapMarkerAlt, faGraduationCap, faBasketballBall  } from '@fortawesome/free-solid-svg-icons';
 
 const AboutMe = ({innerRef}) => {
 
@@ -26,8 +28,8 @@ const AboutMe = ({innerRef}) => {
                 <MyDescription>
                     <p>A Enthusiastic of Robotics & Technology who started the developer career in 2019, during the High School with the Brazilian Robotics Olympiad (OBR). In addition to programming, I also have experience with Design and 3D Modeling due the F1 in Schools challenge.</p>
                 </MyDescription>
-                <SeeMore>
-                    <a aria-label='More Projects' target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>
+                <SeeMore url='/about'>
+                    <a aria-label='More Projects'>
                         See more about me
                     </a>
                 </SeeMore>
