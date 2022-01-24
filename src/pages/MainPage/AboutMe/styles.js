@@ -56,17 +56,24 @@ export const MyDetails = styled.div`
     margin: 2rem 0 3rem 0;
     padding: 0 1.5rem;
     cursor: default;
+`;
 
-    p {
-        font-size: 1rem;
-        padding-bottom: 1rem;
-        white-space: nowrap;
-        color: ${props => props.theme.colors.white};
+export const SingleDetail = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 0.25rem 0;
+    white-space: nowrap;
+    color: ${props => props.theme.colors.white};
 
-        :hover {
-            .icon {
-                transform: rotate(360deg);
-            }
+    span {
+        padding-bottom: 0.25rem;
+    }
+
+    :hover {
+        .icon {
+            transform: rotate(360deg);
         }
     }
 `;
@@ -75,7 +82,7 @@ export const StyledIconFA = styled.div.attrs({
     className: 'icon'
 })`
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: ${props => props.theme.colors.white};
     transition: all 0.5s ease-in-out;
     margin-right: 0.75rem;

@@ -1,12 +1,32 @@
 import Header from '../../../components/Header';
 import SeeMore from '../../../components/SeeMore';
 
-import { AboutMeTabContainer, MySelf, MyPhoto, MyDetails, StyledIconFA , MyDescription} from './styles';
+import { AboutMeTabContainer, MySelf, MyPhoto, MyDetails, SingleDetail, StyledIconFA , MyDescription} from './styles';
 import { FaHourglassHalf, FaMapMarkerAlt, FaGraduationCap, FaBasketballBall  } from 'react-icons/fa';
 
 const AboutMe = ({innerRef}) => {
 
     const myAge = parseInt((new Date() - new Date('06/19/2004')) / (1000*60*60*24*365));
+    const phraseAge = `${myAge} years old`;
+
+    const details = {
+        'age' : {
+            'icon' : <FaHourglassHalf/>,
+            'text' : phraseAge,
+        },
+        'local' : {
+            'icon' : <FaMapMarkerAlt/>,
+            'text' : `Brazil  \xa0//\xa0  Vitória da Conquista - BA`
+        },
+        'education' : {
+            'icon' : <FaGraduationCap/>,
+            'text' : `Future Computer Scientist`
+        },
+        'hobby' : {
+            'icon' : <FaBasketballBall/>,
+            'text' : `Basketball player - 23`
+        }
+    }
 
     return (
         <div ref={innerRef}>
@@ -14,10 +34,18 @@ const AboutMe = ({innerRef}) => {
                 <Header bg={'dark'} bottom={2} title={'About Me'} subtitle={'Who is Gabriel?'}/>
                 <MySelf>
                     <MyDetails>
-                        <p><StyledIconFA><FaHourglassHalf/></StyledIconFA>{myAge} years old</p>
-                        <p><StyledIconFA><FaMapMarkerAlt/></StyledIconFA>Brazil &nbsp;//&nbsp; Vitória da Conquista - BA</p>
-                        <p><StyledIconFA><FaGraduationCap/></StyledIconFA>Future Computer Scientist</p>
-                        <p><StyledIconFA><FaBasketballBall/></StyledIconFA>Basketball player - 23</p>
+                        {
+                            Object.keys(details).map(detail => (
+                                <SingleDetail key={detail}>
+                                    <StyledIconFA>
+                                        {details[detail]['icon']}
+                                    </StyledIconFA>
+                                    <span>
+                                        {details[detail]['text']}
+                                    </span>
+                                </SingleDetail>
+                            ))
+                        }
                     </MyDetails>
                     <MyPhoto>
                         <img src={require('../../../assets/images/model-circle.png')} alt='a handsome guy'/>
