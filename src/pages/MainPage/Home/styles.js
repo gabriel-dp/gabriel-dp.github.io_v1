@@ -10,6 +10,7 @@ export const HomeTabContainer = styled.div`
     justify-content: space-between;
     position: relative;
     padding: 0 15%;
+    cursor: default;
     transition: all 0.5s ease;
 
     @media (max-width: 900px) {
@@ -65,6 +66,17 @@ export const StyledArrow = styled(BiDownArrow)`
     transform: translate(-50%);
     transition: all 0.25s ease;
     cursor: pointer;
+    animation: pulse 2s infinite;
+
+    @keyframes pulse {
+        0% {
+            transform: translate(-50%, 0);
+        }
+        
+        50% {
+            transform: translate(-50%, 100%);
+        }
+    }
 
     @media (min-width: 750px) {
         :hover {
