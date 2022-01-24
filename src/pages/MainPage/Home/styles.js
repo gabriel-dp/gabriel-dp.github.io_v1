@@ -64,16 +64,16 @@ export const StyledArrow = styled(BiDownArrow)`
     bottom: 7vh;
     left: 50%;
     transform: translate(-50%);
-    transition: all 0.25s ease;
+    transition: all 0.25s linear;
     cursor: pointer;
-    animation: pulse 2s infinite;
+    animation: pulse 4s infinite;
 
     @keyframes pulse {
-        0% {
+        0%, 50%, 100% {
             transform: translate(-50%, 0);
         }
         
-        50% {
+        35% {
             transform: translate(-50%, 100%);
         }
     }
@@ -82,6 +82,7 @@ export const StyledArrow = styled(BiDownArrow)`
         :hover {
             font-size: 1.5rem;
             color: ${props => props.theme.colors.primary};
+            animation: 0;
         }
     }
 `;
