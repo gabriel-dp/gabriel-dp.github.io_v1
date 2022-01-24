@@ -15,7 +15,7 @@ const AboutMe = ({innerRef}) => {
                 <MySelf>
                     <MyDetails>
                         <p><StyledIconFA icon={faHourglassHalf}/>{myAge} years old</p>
-                        <p><StyledIconFA icon={faMapMarkerAlt}/>Brazil &nbsp;&nbsp;//&nbsp;&nbsp; Vitória da Conquista - BA</p>
+                        <p><StyledIconFA icon={faMapMarkerAlt}/>Brazil &nbsp;//&nbsp; Vitória da Conquista - BA</p>
                         <p><StyledIconFA icon={faGraduationCap}/>Future Computer Scientist</p>
                         <p><StyledIconFA icon={faBasketballBall}/>Basketball player - 23</p>
                     </MyDetails>

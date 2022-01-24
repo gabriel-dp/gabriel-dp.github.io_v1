@@ -50,7 +50,7 @@ export const MyDetails = styled.div`
     cursor: default;
 
     p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding-bottom: 1rem;
         white-space: nowrap;
         color: ${props => props.theme.colors.white};

@@ -5,7 +5,7 @@ const LightTheme = {
         text: '#333333',
         background: '#dddddd',
         primary: '#206E8C',
-        secondary: '#024059',
+        secondary: '#126687',
         black: '#333333',
         gray: '#999999',
         lightgray: '#dddddd',
