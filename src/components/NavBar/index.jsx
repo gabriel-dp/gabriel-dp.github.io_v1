@@ -5,7 +5,7 @@ import goTo from '../../utils/goTo';
 
 import { NavBarContainer, NavBarDiv, NavBarList, NavBarItem, ThemeSwitch, SwitchIcon, HoverAnimation, FakeLabel} from './styles';
 import Switch from 'react-switch';
-import { FaMoon, FaSun } from 'react-icons/fa';
+import { FaMoon, FaSun, FaArrowLeft } from 'react-icons/fa';
 
 const NavBar = ({ ToggleTheme, refs }) => {
     const theme = useContext(ThemeContext);
@@ -32,7 +32,9 @@ const NavBar = ({ ToggleTheme, refs }) => {
                                     onClick={() => navigate('/portfolio')}
                                     className='Home'
                                 >
-                                    <HoverAnimation>Back</HoverAnimation>
+                                    <HoverAnimation>
+                                        <FaArrowLeft style={{fontSize: '0.75rem'}}/> &nbsp;Back to Home
+                                    </HoverAnimation>
                                 </NavBarItem>
                         }
                     </NavBarList>
