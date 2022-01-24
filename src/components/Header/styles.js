@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-    margin-bottom: 4rem;
+    margin-bottom: ${props => props.bottom}rem;
     display: flex;
     flex-direction: column;
-    align-items: ${props => props.align};
+    align-items: center;
 `;
 
 export const HeaderTitle = styled.h3`

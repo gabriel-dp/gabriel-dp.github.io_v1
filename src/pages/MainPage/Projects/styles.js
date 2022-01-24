@@ -24,37 +24,3 @@ export const CardsContainer = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
 `;
-
-export const SeeMore = styled.div`
-    color: ${props => props.theme.title === 'dark' ? props.theme.colors.text : props.theme.colors.white};
-
-    a, a:hover, a:focus, a:active {
-        text-decoration: none;
-        color: inherit;
-        font-size: 1rem;  
-
-        @media (min-width: 750px) {
-            position: relative;
-            display: block;
-            transition: 0.25s;
-
-            ::after {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 2px;
-                top: 100%;
-                left: 0;
-                background: ${props => props.theme.colors.white};
-                transition: transform 0.5s;
-                transform: scaleX(0);
-                transform-origin: right;
-            }
-
-            :hover::after {
-                transform: scaleX(1);
-                transform-origin: left;
-            }
-        }
-    }
-`;

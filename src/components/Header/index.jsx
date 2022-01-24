@@ -1,8 +1,8 @@
 import { HeaderContainer, HeaderTitle, HeaderSubtitle } from './styles';
 
-const Header = ({ title, subtitle, bg, align = 'center'}) => {
+const Header = ({ title, subtitle, bg, bottom=4}) => {
     return (
-        <HeaderContainer align={align}>
+        <HeaderContainer bottom={bottom}>
             <HeaderTitle bg={bg}>{title}</HeaderTitle>
             <HeaderSubtitle bg={bg}>{subtitle}</HeaderSubtitle>
         </HeaderContainer>

@@ -2,8 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 
 import Header from '../../../components/Header';
 import GithubCard from './GithubCard';
+import SeeMore from '../../../components/SeeMore';
 
-import { ProjectsTabContainer, CardsContainer, SeeMore } from './styles';
+import { ProjectsTabContainer, CardsContainer } from './styles';
 
 const Projects = ({innerRef}) => {
 
