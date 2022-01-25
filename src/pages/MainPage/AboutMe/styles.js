@@ -20,34 +20,6 @@ export const MySelf = styled.div`
     flex-wrap: wrap;
 `;
 
-export const MyPhoto = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.25s ease;
-    border: 0.2rem ${props => props.theme.colors.lightgray} solid;
-    border-radius: 50%;
-    background-color: ${props => props.theme.colors.secondary};
-
-    img {
-        width: 100%;
-        max-width: 18rem;
-        z-index: 0;
-    }
-
-    &::before {
-        --size: 20rem;
-        content: '';
-        position: absolute;
-        left: var(--x);
-        top: var(--y);
-        width: var(--size);
-        height: var(--size);
-        background: radial-gradient(circle closest-side, ${props => props.theme.colors.lightgray}55, transparent);
-        transition: all 0.25s ease-in-out;
-    }
-`;
-
 export const MyDetails = styled.div`
     display: flex;
     flex-direction: column;

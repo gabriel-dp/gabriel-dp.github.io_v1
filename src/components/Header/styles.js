@@ -21,6 +21,7 @@ export const HeaderTitle = styled.h3`
     color: ${props => props.bg === 'dark' ? props.theme.colors.white : props.theme.colors.text};
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    white-space: nowrap;
     transition: all 0.25s;
 `;
 
