@@ -84,15 +84,19 @@ export const Graduation = styled.div`
 
         :hover {
             color: ${props => props.theme.colors.white};
-            background-color: ${props => props.theme.colors.primary};
-            
-            ::before {
-                visibility: visible;
-                opacity: 1;
-                border: 0.75rem ${props => props.theme.colors.primary} solid;
-                border-bottom: 0.75rem solid transparent;
-                border-right: 0.75rem solid transparent;
-                border-left: 0.75rem solid transparent;
+
+            &.left {
+                transform: translateX(-0.5rem);
+                .circle {
+                    transform: translateX(0.5rem);
+                }
+            }
+
+            &.right {
+                transform: translateX(0.5rem);
+                .circle {
+                    transform: translateX(-0.5rem);
+                }
             }
         }
     }
@@ -171,4 +175,5 @@ export const MiddleCircle = styled.div.attrs({
     position: absolute;
     top: 2.25rem;
     color: ${props => props.theme.colors.background};
+    transition: all 0.25s ease; 
 `;

@@ -57,6 +57,8 @@ export const SingleSkill= styled.div`
     align-items: center;
     margin-top: 0.25rem;
 
+    filter: drop-shadow(0 0 0.2rem ${props => props.theme.colors.black});
+
     :hover {
         .skill {
             height: ${props => props.size + 0.5}rem;

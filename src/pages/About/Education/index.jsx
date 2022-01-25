@@ -20,7 +20,7 @@ const Education = () => {
 
     return (
         <EducationContainer>
-            <Header title='Education' subtitle='In progress'/>
+            <Header title='Education' subtitle='In progress...'/>
             <TimeLine>
                 {
                     Object.keys(graduations).map((graduation) => (
