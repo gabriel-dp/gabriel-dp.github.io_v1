@@ -29,7 +29,7 @@ const NavBar = ({ ToggleTheme, refs }) => {
                                 ))
                             : 
                                 <NavBarItem 
-                                    onClick={() => navigate('/portfolio')}
+                                    onClick={() => navigate('/')}
                                     className='Home'
                                 >
                                     <HoverAnimation>
