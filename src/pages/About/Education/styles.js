@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const EducationContainer = styled.div`
     width: 100%;
-    background-color: transparent;
+    background-color: ${props => props.theme.colors.background};
     display: flex;
     flex-direction: column;
     justify-content: center;
