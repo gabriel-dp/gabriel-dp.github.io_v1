@@ -5,7 +5,7 @@ const SeeMore = (props) => {
     const navigate = useNavigate();
     function handleClickLink (url) {
         if (url) {
-            navigate(`/portfolio/${url}`);
+            navigate(`/${url}`);
         }
     }
 
