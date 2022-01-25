@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.896ff4ce.js",
-    "static/media/model-circle.png": "/portfolio/static/media/model-circle.03958c62938415bcf895.png",
-    "static/media/fusion360.jpg": "/portfolio/static/media/fusion360.6ecebef4019ac9d63dea.jpg",
-    "static/media/styled-components.png": "/portfolio/static/media/styled-components.da090b22905ecd34b164.png",
-    "static/media/legoev3.jpeg": "/portfolio/static/media/legoev3.fd0556faa071ef5e11ca.jpeg",
-    "static/media/react.svg": "/portfolio/static/media/react.e27571eaed899c642345e71163624ef9.svg",
-    "static/media/vscode.svg": "/portfolio/static/media/vscode.5f6c87ee85944898b6682f2a2a13df91.svg",
-    "static/media/blender.svg": "/portfolio/static/media/blender.a994b672f7161c5011748171ad4bd99c.svg",
-    "static/media/c-sharp.svg": "/portfolio/static/media/c-sharp.e2c0510d2b743a87e7621b703ba07906.svg",
-    "static/media/arduino.svg": "/portfolio/static/media/arduino.5e8b95309e564d23f42755dcb2617eff.svg",
-    "static/media/python.svg": "/portfolio/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
-    "static/media/html-5.svg": "/portfolio/static/media/html-5.e7638e3676622c76a46ece6c46136fd4.svg",
-    "static/media/c-plusplus.svg": "/portfolio/static/media/c-plusplus.c4a42e1361f15351e4445b53cde0aa8e.svg",
-    "static/media/css-3.svg": "/portfolio/static/media/css-3.e7a9de36d9335d92932e93eb3b32deb9.svg",
-    "static/media/git.svg": "/portfolio/static/media/git.fd381642a8b14fec88b8d6df1ff25220.svg",
-    "static/media/javascript.svg": "/portfolio/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
-    "static/media/threejs.svg": "/portfolio/static/media/threejs.a02bc572667de670fbfb2173c0331d05.svg",
-    "index.html": "/portfolio/index.html",
-    "main.896ff4ce.js.map": "/portfolio/static/js/main.896ff4ce.js.map"
+    "main.js": "/static/js/main.36f7e071.js",
+    "static/media/model-circle.png": "/static/media/model-circle.03958c62938415bcf895.png",
+    "static/media/fusion360.jpg": "/static/media/fusion360.6ecebef4019ac9d63dea.jpg",
+    "static/media/styled-components.png": "/static/media/styled-components.da090b22905ecd34b164.png",
+    "static/media/legoev3.jpeg": "/static/media/legoev3.fd0556faa071ef5e11ca.jpeg",
+    "static/media/react.svg": "/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/vscode.svg": "/static/media/vscode.5f6c87ee85944898b6682f2a2a13df91.svg",
+    "static/media/blender.svg": "/static/media/blender.a994b672f7161c5011748171ad4bd99c.svg",
+    "static/media/c-sharp.svg": "/static/media/c-sharp.e2c0510d2b743a87e7621b703ba07906.svg",
+    "static/media/arduino.svg": "/static/media/arduino.5e8b95309e564d23f42755dcb2617eff.svg",
+    "static/media/python.svg": "/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
+    "static/media/html-5.svg": "/static/media/html-5.e7638e3676622c76a46ece6c46136fd4.svg",
+    "static/media/c-plusplus.svg": "/static/media/c-plusplus.c4a42e1361f15351e4445b53cde0aa8e.svg",
+    "static/media/css-3.svg": "/static/media/css-3.e7a9de36d9335d92932e93eb3b32deb9.svg",
+    "static/media/git.svg": "/static/media/git.fd381642a8b14fec88b8d6df1ff25220.svg",
+    "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
+    "static/media/threejs.svg": "/static/media/threejs.a02bc572667de670fbfb2173c0331d05.svg",
+    "index.html": "/index.html",
+    "main.36f7e071.js.map": "/static/js/main.36f7e071.js.map"
   },
   "entrypoints": [
-    "static/js/main.896ff4ce.js"
+    "static/js/main.36f7e071.js"
   ]
 }
