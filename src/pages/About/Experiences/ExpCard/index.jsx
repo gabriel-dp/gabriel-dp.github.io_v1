@@ -1,7 +1,7 @@
-import { ExpContainer, ExpImage, ExpDetails, ExpHeader, ExpTitle, ExpDescription, Achievement} from './styles';
-import { FaTrophy } from 'react-icons/fa';
+import { ExpContainer, ExpImage, ExpDetails, ExpHeader, ExpTitle, ExpDescription, Achievement, ExpExtLink} from './styles';
+import { FaTrophy, FaExternalLinkAlt } from 'react-icons/fa';
 
-const ExpCard = ({ title, time, achievement, logo, image, description }) => {
+const ExpCard = ({ title, time, achievement, logo, image, description, link }) => {
     return (
         <ExpContainer>
             <ExpImage>
@@ -21,6 +21,9 @@ const ExpCard = ({ title, time, achievement, logo, image, description }) => {
                 <ExpDescription>
                     <p>{description}</p>
                 </ExpDescription>
+                <ExpExtLink target='_blank' href={link}>
+                    <FaExternalLinkAlt/>
+                </ExpExtLink>
             </ExpDetails>
         </ExpContainer>
     );

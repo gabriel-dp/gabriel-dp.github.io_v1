@@ -4,6 +4,7 @@ export const ExpContainer = styled.div`
     width: 100%;
     height: 20rem;
     position: relative;
+    margin-bottom: 2rem;
     cursor: default;
 
     :hover {
@@ -74,7 +75,7 @@ export const ExpHeader = styled.div`
 
 export const ExpTitle = styled.div`
     h3 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         font-family: 'Oswald', sans-serif;
     }
 
@@ -89,9 +90,10 @@ export const ExpDescription = styled.div`
     position: relative;
 
     p {
-        margin: 1.5rem 0;
+        margin: 1.5rem 0 3rem 0;
         font-size: 0.875rem;
         color: ${props => props.theme.colors.black};
+        text-align: justify;
     }
 `;
 
@@ -103,4 +105,21 @@ export const Achievement = styled.div`
     font-weight: bold;
     position: relative;
     right: 0;
+`;
+
+export const ExpExtLink = styled.a.attrs({
+    className: 'link'
+})`
+    padding: 0.25rem;
+    cursor: pointer;
+    color: ${props => props.theme.colors.black};
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+
+    :hover {
+        color: ${props => props.theme.colors.primary};
+    }
 `;
