@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import usePersistedState from './utils/usePersistedState';
 
 import MainPage from './pages/MainPage';
 import About from './pages/About';
+import Error from './pages/Error';
 
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/global';
@@ -20,20 +21,23 @@ function App() {
 		<ThemeProvider theme={theme}>
 			<GlobalStyle/>
 			<BrowserRouter basename='/'>
-				<Link to="/about-me"/>
 				<Routes>
 					<Route 
 						path='/'
-						exact
 						element={
 							<MainPage ToggleTheme={ToggleTheme}/>
 						}
 					/>
 					<Route 
 						path='/about-me' 
-						exact
 						element={
 							<About ToggleTheme={ToggleTheme}/>
+						}
+					/>
+					<Route 
+						path='*' 
+						element={
+							<Error/>
 						}
 					/>
 				</Routes>
