@@ -25,8 +25,8 @@
     "static/media/css-3.svg": "/static/media/css-3.e7a9de36d9335d92932e93eb3b32deb9.svg",
     "static/media/git.svg": "/static/media/git.fd381642a8b14fec88b8d6df1ff25220.svg",
     "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
-    "index.html": "/index.html",
     "static/media/threejs.svg": "/static/media/threejs.a02bc572667de670fbfb2173c0331d05.svg",
+    "index.html": "/index.html",
     "main.a5f369c9.js.map": "/static/js/main.a5f369c9.js.map"
   },
   "entrypoints": [
