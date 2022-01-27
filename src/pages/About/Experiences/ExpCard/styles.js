@@ -8,35 +8,25 @@ export const ExpContainer = styled.div`
     display: flex;
     flex-direction: row;
 
-    :hover {
-        .image {
-            transform: translateX(5%);
-            img {
-                filter: none;
-            }
-        }
-
-        .details {
-            transform: translateX(-10%);
-        }
-    }
-
-    @media (max-width: 1000px) {
-        flex-direction: column-reverse;
-        align-items: center;
-
+    @media (min-width: 1000px) {
         :hover {
             .image {
-                transform: translateY(-2.5%);
+                transform: translateX(5%);
                 img {
                     filter: none;
                 }
             }
-            
+    
             .details {
-                transform: translateX(0);
+                transform: translateX(-10%);
             }
         }
+    }
+
+
+    @media (max-width: 999px) {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 `;
 
@@ -60,12 +50,18 @@ export const ExpImage = styled.div.attrs({
         filter:  sepia(84%) hue-rotate(164deg) brightness(50%) contrast(98%);
         min-width: 100%;
         object-fit: cover;
+        object-position: top;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 999px) {
         width: 100%;
-        transform: translateY(-70%);
+        height: 12rem;
+        transform: translate(0, -2.5%);
         border-radius: 0 0 1rem 1rem;
+
+        img {
+            filter: none;
+        }
     }
 `;
 
@@ -85,7 +81,7 @@ export const ExpDetails = styled.div.attrs({
     z-index: 1;
     position: relative;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 999px) {
         width: 100%;
         transform: none;
         border-radius: 1rem 1rem 0 0;
@@ -104,7 +100,18 @@ export const ExpHeader = styled.div`
         height: 3rem;
         width: 6rem;
         object-fit: contain;
-        object-position: right
+        object-position: right;
+
+        @media (max-width: 500px) {
+            object-position: center;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    @media (max-width: 500px) {
+        flex-direction: column-reverse;
     }
 `;
 
