@@ -83,6 +83,7 @@ export const ExpDetails = styled.div.attrs({
     align-items: center;
     box-shadow: -2px 2px 5px ${props => props.theme.colors.black};
     z-index: 1;
+    position: relative;
 
     @media (max-width: 1000px) {
         width: 100%;
