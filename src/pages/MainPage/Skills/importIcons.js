@@ -31,6 +31,7 @@ const ICONS = {
         'Lego EV3' : require('../../../assets/icons/skills/other/legoev3.jpeg'),
         'Fusion 360' : require('../../../assets/icons/skills/other/fusion360.jpg'),
         'Blender' : require('../../../assets/icons/skills/other/blender.svg').default,
+        'CorelDRAW' : require('../../../assets/icons/skills/other/coreldraw.png'),
     },
 }
 
