@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ExpContainer = styled.div`
     width: 100%;
     max-width: 65rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     cursor: default;
     display: flex;
     flex-direction: row;
@@ -18,6 +18,24 @@ export const ExpContainer = styled.div`
 
         .details {
             transform: translateX(-10%);
+        }
+    }
+
+    @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        :hover {
+            .image {
+                transform: translateY(-2.5%);
+                img {
+                    filter: none;
+                }
+            }
+            
+            .details {
+                transform: translateX(0);
+            }
         }
     }
 `;
@@ -43,6 +61,12 @@ export const ExpImage = styled.div.attrs({
         min-width: 100%;
         object-fit: cover;
     }
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        transform: translateY(-70%);
+        border-radius: 0 0 1rem 1rem;
+    }
 `;
 
 export const ExpDetails = styled.div.attrs({
@@ -58,6 +82,15 @@ export const ExpDetails = styled.div.attrs({
     flex-direction: column;
     align-items: center;
     box-shadow: -2px 2px 5px ${props => props.theme.colors.black};
+    z-index: 1;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        transform: none;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: 0 2px 5px ${props => props.theme.colors.black};
+        max-width: 30rem;
+    }
 `;
 
 export const ExpHeader = styled.div`

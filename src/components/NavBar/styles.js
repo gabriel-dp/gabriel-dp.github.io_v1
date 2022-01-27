@@ -7,7 +7,7 @@ export const NavBarContainer = styled.div`
     max-height: 3.5rem;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 
     background: ${props => props.theme.colors.background}CC;
     -webkit-backdrop-filter: blur(10px);
