@@ -40,7 +40,7 @@ export const MainTitle = styled.div`
     h2 {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        font-size: 1.3em;
+        font-size: 1.4em;
         margin-bottom: 1.5rem;
     }
 `;

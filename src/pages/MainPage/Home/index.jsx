@@ -10,7 +10,7 @@ const Home = ({innerRef, nextRef}) => {
             <HomeTabContainer>
                 <MainTitle>
                     <h1>Gabriel de Paula</h1>
-                    <h2>Developer and 3D Modelator</h2>
+                    <h2>Developer and 3D Modeler</h2>
                     <IconsContact/>
                 </MainTitle>
                 <Object3DContainer>
