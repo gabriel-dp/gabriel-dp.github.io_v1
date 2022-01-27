@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import usePersistedState from './utils/usePersistedState';
 
 import MainPage from './pages/MainPage';
@@ -19,7 +19,8 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle/>
-			<BrowserRouter>
+			<BrowserRouter basename='/'>
+				<Link to="/about-me"/>
 				<Routes>
 					<Route 
 						path='/'
