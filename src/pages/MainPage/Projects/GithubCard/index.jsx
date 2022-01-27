@@ -17,9 +17,18 @@ const GithubCard = ({ repoData, githubConfig }) => {
                     {
                         repoData.tags.map((tag) => (
                             <TagItem key={tag}>{tag}</TagItem>
-                            ))
+                        ))
                     }
-                    {repoData.website !== '' ? <WebsiteButton onClick={(e) => {window.open(repoData.website, "_blanck"); e.preventDefault()}}><FaLink/></WebsiteButton> : <></>}
+                    {   
+                        repoData.website !== '' ? 
+                            <WebsiteButton 
+                                aria-label="Visit website project"
+                                onClick={(e) => {window.open(repoData.website, "_blanck"); e.preventDefault()}}
+                            >
+                                <FaLink/>
+                            </WebsiteButton> 
+                        : <></>
+                    }
                 </TagsContainer>
             </DescriptionContainer>
             <ImageCover><img src={repoCoverUrl} alt='portfolio-cover'/></ImageCover>
