@@ -30,6 +30,7 @@ function App() {
 					/>
 					<Route 
 						path='/about-me' 
+						exact
 						element={
 							<About ToggleTheme={ToggleTheme}/>
 						}
