@@ -1,9 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import usePersistedState from './utils/usePersistedState';
 
 import MainPage from './pages/MainPage';
 import About from './pages/About';
-import Error from './pages/Error';
 
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/global';
@@ -20,7 +19,7 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle/>
-			<BrowserRouter basename='/'>
+			<HashRouter>
 				<Routes>
 					<Route 
 						path='/'
@@ -35,14 +34,8 @@ function App() {
 							<About ToggleTheme={ToggleTheme}/>
 						}
 					/>
-					<Route 
-						path='*' 
-						element={
-							<Error/>
-						}
-					/>
 				</Routes>
-			</BrowserRouter>
+			</HashRouter>
 		</ThemeProvider>
 	);
 }
