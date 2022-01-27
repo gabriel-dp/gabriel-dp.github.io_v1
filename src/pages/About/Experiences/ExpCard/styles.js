@@ -2,21 +2,22 @@ import styled from 'styled-components';
 
 export const ExpContainer = styled.div`
     width: 100%;
-    height: 20rem;
-    position: relative;
+    max-width: 65rem;
     margin-bottom: 2rem;
     cursor: default;
+    display: flex;
+    flex-direction: row;
 
     :hover {
         .image {
-            left: 0;
+            transform: translateX(5%);
             img {
                 filter: none;
             }
         }
 
         .details {
-            right: 0;
+            transform: translateX(-10%);
         }
     }
 `;
@@ -25,11 +26,11 @@ export const ExpImage = styled.div.attrs({
     className: 'image'
 })`
     width: 50%;
-    height: 17.5rem;
+    max-width: 30rem;
+    height: 18rem;
     border: 0.25rem ${props => props.theme.colors.lightgray} solid;
     border-radius: 1rem;
-    position: absolute;
-    left: 20%;
+    transform: translateX(35%);
     transition: all 0.5s ease-in-out;
 
     display: flex;
@@ -50,13 +51,13 @@ export const ExpDetails = styled.div.attrs({
     width: 55%;
     background-color: ${props => props.theme.colors.lightgray};
     border-radius: 0 1rem 1rem 1rem;
-    position: absolute;
-    right: 15%;
+    transform: translateX(-30%);
     transition: all 0.5s ease-in-out;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: -2px 2px 5px ${props => props.theme.colors.black};
 `;
 
 export const ExpHeader = styled.div`
