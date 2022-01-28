@@ -18,18 +18,18 @@ const MainPage = ({ ToggleTheme }) => {
 
     const refs = {
         'Home' : homeRef,
-        'About Me' : aboutmeRef,
         'Skills' : skillsRef,
-        'Projects' : projectsRef
+        'Projects' : projectsRef,
+        'About Me' : aboutmeRef,
     }
 
     return (
         <Screen>
             <NavBar ToggleTheme={ToggleTheme} refs={refs}/>
-            <Home innerRef={homeRef} nextRef={aboutmeRef}/>
-            <AboutMe innerRef={aboutmeRef}/>
+            <Home innerRef={homeRef} nextRef={refs['Skills']}/>
             <Skills innerRef={skillsRef}/>
             <Projects innerRef={projectsRef}/>
+            <AboutMe innerRef={aboutmeRef}/>
             <Footer/>
         </Screen>
     );

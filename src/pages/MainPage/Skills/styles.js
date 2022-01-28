@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SkillsTabContainer = styled.div`
     width: 100%;
-    background-color: ${props => props.theme.colors.background};
+    background-color: ${props => props.theme.colors.primary};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@ export const SkillsTabContainer = styled.div`
 `;
 
 export const SkillsClassContainer = styled.div`
-    width: 100%;
+    width: ${props => props.width};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@ export const SkillsClassContainer = styled.div`
 
 export const SkillsClassTitle = styled.h3`
     font-size: ${props => props.size}rem;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.white};
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -57,7 +57,7 @@ export const SingleSkill= styled.div`
     align-items: center;
     margin-top: 0.25rem;
 
-    filter: drop-shadow(0 0 0.2rem ${props => props.theme.colors.black});
+    filter: drop-shadow(0 0 0.1rem ${props => props.theme.colors.black});
 
     :hover {
         .skill {

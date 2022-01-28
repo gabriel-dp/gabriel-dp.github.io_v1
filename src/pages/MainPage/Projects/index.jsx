@@ -70,7 +70,7 @@ const Projects = ({innerRef}) => {
     return (
         <div ref={innerRef}>
             <ProjectsTabContainer>
-                <Header bg={'dark'} title={'Projects'} subtitle={'From Github'}/>
+                <Header title={'Projects'} subtitle={'From Github'}/>
                 <CardsContainer>
                     {
                         repositories.map(repo => (

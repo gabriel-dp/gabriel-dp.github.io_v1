@@ -7,10 +7,10 @@ const Skills = ({innerRef}) => {
     return (
         <div ref={innerRef}>
             <SkillsTabContainer>
-                <Header title={'Skills'} subtitle={'In progress...'}/>
+                <Header title={'Skills'} subtitle={'I work with...'} bg='dark'/>
                 {
                     Object.keys(ICONS).map((title) => (
-                        <SkillsClassContainer key={title}>
+                        <SkillsClassContainer key={title} width={ICONS[title]['sizes']['width']}>
                             <SkillsClassTitle size={ICONS[title]['sizes']['title']}>{title}</SkillsClassTitle>
                             <IconsContainer>
                                 {
