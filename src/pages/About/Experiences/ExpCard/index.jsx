@@ -5,23 +5,28 @@ const ExpCard = ({ title, time, achievement, logo, image, description, link }) =
     return (
         <ExpContainer>
             <ExpImage>
-                <img src={image}/>
+                <img src={image} alt={`${title}-image`}/>
             </ExpImage>
             <ExpDetails>
                 <ExpHeader>
                     <ExpTitle>
-                        <h3>{title}</h3>
+                        <h4>{title}</h4>
                         <h5>{time}</h5>
                         <Achievement>
                             <FaTrophy style={{fontSize: '1.5rem', marginRight: '1rem'}}/>{achievement}
                         </Achievement>
                     </ExpTitle>
-                    <img src={logo}/>
+                    <img src={logo} alt={`${title}-logo`}/>
                 </ExpHeader>
                 <ExpDescription>
                     <p>{description}</p>
                 </ExpDescription>
-                <ExpExtLink target='_blank' href={link}>
+                <ExpExtLink 
+                    target='_blank' 
+                    href={link} 
+                    aria-label={`${title}-reportage`}
+                    rel='noreferrer'
+                >
                     <FaExternalLinkAlt/>
                 </ExpExtLink>
             </ExpDetails>

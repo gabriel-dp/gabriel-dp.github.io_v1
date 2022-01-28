@@ -27,12 +27,13 @@ const Education = () => {
                         <GraduationContainer key={graduation}>
                             <Graduation className={graduations[graduation]['side']}>
                                 <GraduationData>
-                                    <h6>{`${graduations[graduation]['time']}`}</h6>
-                                    <h4>{graduation}</h4>
-                                    <h5>{graduations[graduation]['institution']}</h5>
+                                    <h5>{`${graduations[graduation]['time']}`}</h5>
+                                    <h3>{graduation}</h3>
+                                    <h4>{graduations[graduation]['institution']}</h4>
                                 </GraduationData>
                                 <InstitutionLogo 
                                     src={graduations[graduation]['institution-logo']}
+                                    alt={`${graduations[graduation]['institution']}-logo`}
                                 />
                                 <MiddleCircle/>
                             </Graduation>

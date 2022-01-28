@@ -129,16 +129,16 @@ export const GraduationData = styled.div.attrs({
     className : 'data'
 })`
 
-    h4 {
+    h3 {
         font-size: 1.1rem;
     }
 
-    h5 {
+    h4 {
         font-size: 0.8rem;
         margin: 0.25rem 0;
     }
 
-    h6 {
+    h5 {
         font-size: 0.75rem;
         margin-bottom: 0.5rem;
     }

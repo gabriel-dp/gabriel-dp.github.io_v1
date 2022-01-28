@@ -116,16 +116,16 @@ export const ExpHeader = styled.div`
 `;
 
 export const ExpTitle = styled.div`
-    h3 {
+    h4 {
         font-size: 1.5rem;
         font-family: 'Oswald', sans-serif;
     }
 
     h5 {
         font-size: 0.875rem;
-        color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.secondary};
         margin-bottom: 1.5rem;
-    }
+    }   
 `;
 
 export const ExpDescription = styled.div`
@@ -143,7 +143,7 @@ export const Achievement = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.secondary};
     font-weight: bold;
     position: relative;
     right: 0;
