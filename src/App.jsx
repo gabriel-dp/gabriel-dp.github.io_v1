@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import usePersistedState from './utils/usePersistedState';
 
 import MainPage from './pages/MainPage';
@@ -19,23 +19,21 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle/>
-			<HashRouter>
-				<Routes>
-					<Route 
-						path='/'
-						element={
-							<MainPage ToggleTheme={ToggleTheme}/>
-						}
-					/>
-					<Route 
-						path='/about-me' 
-						exact
-						element={
-							<About ToggleTheme={ToggleTheme}/>
-						}
-					/>
-				</Routes>
-			</HashRouter>
+			<Routes>
+				<Route 
+					path='/'
+					element={
+						<MainPage ToggleTheme={ToggleTheme}/>
+					}
+				/>
+				<Route 
+					path='/about-me' 
+					exact
+					element={
+						<About ToggleTheme={ToggleTheme}/>
+					}
+				/>
+			</Routes>
 		</ThemeProvider>
 	);
 }
