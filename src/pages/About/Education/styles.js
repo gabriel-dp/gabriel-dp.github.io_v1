@@ -24,7 +24,7 @@ export const Graduation = styled.div`
     width: calc(50% - 3rem);
     min-width: 15rem;
     margin: 0 1rem 1rem 1rem;
-    background-color: ${props => props.theme.colors.secondary};
+    background-color: ${props => props.theme.title === 'dark' ? props.theme.colors.secondary : props.theme.colors.primary};
     border-radius: 0.5rem;
     padding: 1.5rem 2rem;
     color: ${props => props.theme.colors.white};
@@ -42,7 +42,7 @@ export const Graduation = styled.div`
         content: '';
         height: 0;
         width: 0;
-        border: 0.75rem ${props => props.theme.colors.secondary} solid;
+        border: 0.75rem  ${props => props.theme.title === 'dark' ? props.theme.colors.secondary : props.theme.colors.primary} solid;
         border-bottom: 0.75rem solid transparent;
         border-right: 0.75rem solid transparent;
         border-left: 0.75rem solid transparent;

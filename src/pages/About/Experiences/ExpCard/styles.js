@@ -123,7 +123,7 @@ export const ExpTitle = styled.div`
 
     h5 {
         font-size: 0.875rem;
-        color: ${props => props.theme.colors.secondary};
+        color: ${props => props.theme.title === 'dark' ? props.theme.colors.secondary : props.theme.colors.primary};
         margin-bottom: 1.5rem;
     }   
 `;
@@ -143,7 +143,7 @@ export const Achievement = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: ${props => props.theme.colors.secondary};
+    color: ${props => props.theme.title === 'dark' ? props.theme.colors.secondary : props.theme.colors.primary};
     font-weight: bold;
     position: relative;
     right: 0;
