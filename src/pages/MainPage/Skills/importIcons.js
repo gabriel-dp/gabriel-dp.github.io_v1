@@ -32,6 +32,7 @@ const ICONS = {
         'Git' : require('../../../assets/icons/skills/other/git.svg').default,
         'Arduino' : require('../../../assets/icons/skills/other/arduino.svg').default,
         'CorelDRAW' : require('../../../assets/icons/skills/other/coreldraw.png'),
+        'MS Office' : require('../../../assets/icons/skills/other/office.svg').default,
     },
 }
 
