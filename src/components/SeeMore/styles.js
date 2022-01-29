@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SeeMoreContainer = styled.div`
-    color: ${props => props.theme.colors.white};
+    color: ${props => props.bg === 'switch' ? props.theme.colors.text : props.theme.colors.white};
     cursor: pointer;
 
     a, a:hover, a:focus, a:active {

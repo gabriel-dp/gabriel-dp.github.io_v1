@@ -31,21 +31,35 @@ export const ProjectContainer = styled.div`
         align-items: ${props => props.side ? 'flex-start' : 'flex-end'};
         text-align: ${props => props.side ? 'left' : 'right'};
     }
+
+    @media (max-width: 750px) {
+        flex-direction: column-reverse;
+        height: 40rem;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 3rem;
+
+        .details {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
 `;
 
 export const ProjectImage = styled.div`
-    width: 38.2%;
+    width: 40%;
     height: 100%;
     background-color: gray;
     position: relative;
     display: flex;
     justify-content: center;
+    transition: all 0.25s ease;
     
     img {
         width:100%; 
         height:100%;
         object-fit: cover;
-        object-position: center top;
+        object-position: center;
     }
     
     ::after {
@@ -57,18 +71,24 @@ export const ProjectImage = styled.div`
         width: 100%;
         box-shadow: inset 0 -4rem 5rem ${props => props.theme.colors.primary}55;
     }
+
+    @media (max-width: 750px) {
+        width: 100%;
+        height: 40%;
+    }
 `;
 
 export const ProjectDetails = styled.div.attrs({
     className:'details'
 })`
     height: 100%;
-    width: 61.8%;
+    width: 60%;
     background-color: ${props => props.theme.title === 'dark' ? props.theme.colors.secondary : props.theme.colors.primary};
     color: ${props => props.theme.colors.white};
     padding: 2rem 2.5rem;
     text-align: justify;
     position: relative;
+    transition: all 0.25s ease;
 
     display: flex;
     flex-direction: column;
@@ -91,6 +111,11 @@ export const ProjectDetails = styled.div.attrs({
     p {
         font-size: 0.9rem;
         font-weight: 400;
+    }
+
+    @media (max-width: 750px) {
+        width: 100%;
+        height: 60%;
     }
 `;
 
@@ -121,7 +146,7 @@ export const ProjectLink = styled.button.attrs({
     height: 2rem;
     padding: 1rem;
     color: ${props => props.theme.colors.text};
-    background-color: ${props => props.theme.colors.background}DD;
+    background-color: ${props => props.theme.colors.background}FF;
     transition: all 0.25s ease;
     border-radius: 1rem;
     border: none;

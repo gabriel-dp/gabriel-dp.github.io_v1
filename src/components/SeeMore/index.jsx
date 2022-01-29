@@ -10,7 +10,7 @@ const SeeMore = (props) => {
     }
 
     return (
-        <SeeMoreContainer onClick={() => handleClickLink(props.url)}>
+        <SeeMoreContainer onClick={() => handleClickLink(props.url)} bg={props.bg}>
             {props.children}
         </SeeMoreContainer>
     );
