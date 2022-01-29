@@ -155,7 +155,7 @@ export const GraduationTime = styled.h6`
 export const MiddleTimeLine = styled.div`
     width: 0.25rem;
     height: 100%;
-    background-color: ${props => props.theme.colors.text};
+    background-color: ${props => props.theme.colors.gray};
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -171,7 +171,7 @@ export const MiddleCircle = styled.div.attrs({
     height: 1rem;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: ${props => props.theme.colors.text};
+    background-color: ${props => props.theme.colors.gray};
     position: absolute;
     top: 2.25rem;
     color: ${props => props.theme.colors.background};

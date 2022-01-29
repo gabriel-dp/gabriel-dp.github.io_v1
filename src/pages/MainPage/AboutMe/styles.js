@@ -63,7 +63,7 @@ export const StyledIconFA = styled.div.attrs({
 export const MyDescription = styled.div`
     width: 100%;
     max-width: 50rem;
-    background-color: ${props => props.theme.colors.secondary};
+    background-color: ${props => props.theme.colors.secondary}99;
     border-radius: 1rem;
     margin: 3rem 0;
     padding: 1.5rem 2rem;

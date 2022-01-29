@@ -25,7 +25,7 @@ const AboutMe = ({innerRef}) => {
         },
         'hobby' : {
             'icon' : <FaBasketballBall/>,
-            'text' : `Basketball player - 23`
+            'text' : `Basketball player (23)`
         }
     }
 

@@ -28,7 +28,7 @@ export const HeaderDiv = styled.div`
 export const FullDescription = styled.div`
     width: 100%;
     max-width: 70rem;
-    background-color: ${props => props.theme.colors.secondary};
+    background-color: ${props => props.theme.colors.secondary}99;
     border-radius: 1rem;
     padding: 2rem 2.5rem 1rem 2.5rem;
     color: ${props => props.theme.colors.white};
