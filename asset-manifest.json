@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.325409a0.js",
+    "main.js": "/static/js/main.e9289771.js",
+    "static/media/zul.png": "/static/media/zul.aaae0e9cff55e64a765a.png",
     "static/media/model-circle.png": "/static/media/model-circle.03958c62938415bcf895.png",
     "static/media/aeb.png": "/static/media/aeb.b704040d8a226c8586f0.png",
+    "static/media/sword-todo.png": "/static/media/sword-todo.c0f9d5e1b5fd8cbe9893.png",
     "static/media/obr.jpg": "/static/media/obr.5c1cfcfa894e93125efb.jpg",
     "static/media/f1inschools.jpg": "/static/media/f1inschools.0474d9e5ebeadffb1721.jpg",
     "static/media/anicon.jpg": "/static/media/anicon.2aba0792d973d20ad10a.jpg",
@@ -11,7 +13,6 @@
     "static/media/obr-logo.png": "/static/media/obr-logo.1652dc87fcded40dfc83.png",
     "static/media/styled-components.png": "/static/media/styled-components.da090b22905ecd34b164.png",
     "static/media/f1inschools-logo.png": "/static/media/f1inschools-logo.241fbb823ac6ab300045.png",
-    "static/media/legoev3.jpeg": "/static/media/legoev3.fd0556faa071ef5e11ca.jpeg",
     "static/media/aeb-logo.png": "/static/media/aeb-logo.78c835b26177972ab5f6.png",
     "static/media/coreldraw.png": "/static/media/coreldraw.353242ee24eae26155c8.png",
     "static/media/react.svg": "/static/media/react.e27571eaed899c642345e71163624ef9.svg",
@@ -20,16 +21,14 @@
     "static/media/c-sharp.svg": "/static/media/c-sharp.e2c0510d2b743a87e7621b703ba07906.svg",
     "static/media/arduino.svg": "/static/media/arduino.5e8b95309e564d23f42755dcb2617eff.svg",
     "static/media/python.svg": "/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
-    "static/media/html-5.svg": "/static/media/html-5.e7638e3676622c76a46ece6c46136fd4.svg",
     "static/media/c-plusplus.svg": "/static/media/c-plusplus.c4a42e1361f15351e4445b53cde0aa8e.svg",
-    "static/media/css-3.svg": "/static/media/css-3.e7a9de36d9335d92932e93eb3b32deb9.svg",
     "static/media/git.svg": "/static/media/git.fd381642a8b14fec88b8d6df1ff25220.svg",
     "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
     "static/media/threejs.svg": "/static/media/threejs.a02bc572667de670fbfb2173c0331d05.svg",
     "index.html": "/index.html",
-    "main.325409a0.js.map": "/static/js/main.325409a0.js.map"
+    "main.e9289771.js.map": "/static/js/main.e9289771.js.map"
   },
   "entrypoints": [
-    "static/js/main.325409a0.js"
+    "static/js/main.e9289771.js"
   ]
 }
