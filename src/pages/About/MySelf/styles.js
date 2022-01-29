@@ -27,12 +27,14 @@ export const HeaderDiv = styled.div`
 
 export const FullDescription = styled.div`
     width: 100%;
+    max-width: 70rem;
     background-color: ${props => props.theme.colors.secondary};
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 2rem 2.5rem 1rem 2.5rem;
     color: ${props => props.theme.colors.white};
 
     p {
         margin-bottom: 1rem;
+        filter: drop-shadow(0 0 0.5px black);
     }
 `;

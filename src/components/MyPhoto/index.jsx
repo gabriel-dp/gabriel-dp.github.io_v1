@@ -24,13 +24,13 @@ const MyPhotoDiv = styled.div`
         top: var(--y);
         width: var(--size);
         height: var(--size);
-        background: radial-gradient(circle closest-side, ${props => props.theme.colors.lightgray}55, transparent);
+        background: radial-gradient(circle closest-side, ${props => props.theme.colors.text}44, transparent);
         transition: all 0.25s ease-in-out;
     }
 
     :hover {
         ::before {
-            background: radial-gradient(circle closest-side, ${props => props.theme.colors.lightgray}66, transparent);
+            background: radial-gradient(circle closest-side, ${props => props.theme.colors.text}55, transparent);
         }
     }
 `;

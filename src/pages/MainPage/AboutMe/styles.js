@@ -70,5 +70,6 @@ export const MyDescription = styled.div`
 
     p {
         color: ${props => props.theme.colors.white};
+        filter: drop-shadow(0 0 0.5px black);
     }
 `;

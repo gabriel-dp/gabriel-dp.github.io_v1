@@ -13,10 +13,10 @@ const MySelf = () => {
                 </HeaderDiv>
             </PhotoAndName>
             <FullDescription>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum harum dolore! Quod inventore aliquid doloremque mollitia, ipsam soluta? Nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptates adipisci similique officia nemo ut.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum harum dolore! Quod inventore aliquid doloremque mollitia, ipsam soluta? Nesciunt!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptates adipisci similique officia nemo ut.</p>
+                <p>My name is Gabriel de Paula Meira, but some people call me "Math" or "Gabs".</p>
+                <p>Developer and 3D modeler from Brazil, born in São Paulo/SP, but current living in Vitória da Conquista/BA.</p>
+                <p>I've always been great at math, but only when I was 14 years old I entered at Sesi School and was able to participate of robotics competitions, working together with other people to achieve a goal to the team. At this time I figured out my vocation to programming</p>
+                <p>I'm a person with many personal goals, my nexts are enter at University and start working. My carrer is just beginning, effort and dedication will not lack.</p>
             </FullDescription>
         </MySelfTabContainer>
     );
