@@ -1,4 +1,4 @@
-import { useRef} from 'react';
+import { useRef, useEffect } from 'react';
 
 import NavBar from '../../components/NavBar';
 import Home from './Home';
@@ -10,6 +10,10 @@ import Footer from '../../components/Footer';
 import { Screen } from './styles';
 
 const MainPage = ({ ToggleTheme }) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     const homeRef = useRef(null);
     const aboutmeRef = useRef(null);

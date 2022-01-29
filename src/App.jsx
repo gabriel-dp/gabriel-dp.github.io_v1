@@ -3,6 +3,7 @@ import usePersistedState from './utils/usePersistedState';
 
 import MainPage from './pages/MainPage';
 import About from './pages/About';
+import Projects from './pages/Projects';
 
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/global';
@@ -24,6 +25,13 @@ function App() {
 					path='/'
 					element={
 						<MainPage ToggleTheme={ToggleTheme}/>
+					}
+				/>
+				<Route 
+					path='/projects' 
+					exact
+					element={
+						<Projects ToggleTheme={ToggleTheme}/>
 					}
 				/>
 				<Route 

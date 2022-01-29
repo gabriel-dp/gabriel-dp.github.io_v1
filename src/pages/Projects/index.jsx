@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 
-import Header from '../../../components/Header';
+import NavBar from '../../components/NavBar';
+import Header from '../../components/Header';
 import GithubCard from './GithubCard';
-import SeeMore from '../../../components/SeeMore';
+import SeeMore from '../../components/SeeMore';
 
-import { ProjectsTabContainer, CardsContainer } from './styles';
+import { Screen, ProjectsTabContainer, CardsContainer } from './styles';
 
-const Projects = ({innerRef}) => {
+const Projects = ({ ToggleTheme }) => {
 
     const githubConfig = {
         username: 'gabrieldp23',
@@ -68,9 +69,10 @@ const Projects = ({innerRef}) => {
     }, [githubConfig.keyTopic, repos]);
     
     return (
-        <div ref={innerRef}>
+        <Screen>
+            <NavBar ToggleTheme={ToggleTheme}/>
             <ProjectsTabContainer>
-                <Header title={'Projects'} subtitle={'From Github'}/>
+                <Header title={'Projects'} subtitle={'From Github'} bg='dark'/>
                 <CardsContainer>
                     {
                         repositories.map(repo => (
@@ -88,7 +90,7 @@ const Projects = ({innerRef}) => {
                     </a>
                 </SeeMore>
             </ProjectsTabContainer>
-        </div>
+        </Screen>
     );
 }
 

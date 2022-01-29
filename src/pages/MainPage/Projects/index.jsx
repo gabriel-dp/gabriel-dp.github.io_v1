@@ -42,8 +42,8 @@ const Projects = ({innerRef}) => {
                         </ProjectContainer>
                     ))
                 }
-                <SeeMore bg='switch'>
-                    <a aria-label='More Projects' target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>
+                <SeeMore bg='switch' url='projects'>
+                    <a>
                         See more projects
                     </a>
                 </SeeMore>
