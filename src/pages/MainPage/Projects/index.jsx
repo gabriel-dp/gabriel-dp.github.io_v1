@@ -6,6 +6,11 @@ import { ProjectsTabContainer, ProjectContainer, ProjectImage, ProjectDetails, P
 import { FaLink } from 'react-icons/fa';
 
 const Projects = ({innerRef}) => {
+
+    function handleClickButton (url) {
+        window.open(url, '_blanck').focus();
+    }
+
     return (
         <div ref={innerRef}>
             <ProjectsTabContainer>
@@ -14,22 +19,24 @@ const Projects = ({innerRef}) => {
                     Object.keys(PROJECTS).map((project, index) => (
                         <ProjectContainer side={(index%2 === 0)}>
                             <ProjectImage>
-                                <img src={PROJECTS[project]['image']} alt={`${project}-image`}/>
-                                <ProjectLink>
-                                        View this project &nbsp;<FaLink/>
-                                    </ProjectLink>
+                                <img src={PROJECTS[project]['image']} alt={`${project}-work`}/>
+                                <ProjectLink onClick={() => handleClickButton(PROJECTS[project]['url'])}>
+                                    View this project &nbsp;<FaLink/>
+                                </ProjectLink>
                             </ProjectImage>
                             <ProjectDetails>
-                                <h3>{project}</h3>
-                                <h4>{PROJECTS[project]['subtitle']}</h4>
-                                <p>{PROJECTS[project]['description']}</p>
+                                <div>
+                                    <h3>{project}</h3>
+                                    <h4>{PROJECTS[project]['subtitle']}</h4>
+                                    <p>{PROJECTS[project]['description']}</p>
+                                </div>
                                 <ProjectTools>
                                     <h5>Tools used:</h5>
                                     {
                                         PROJECTS[project]['tools'].map((tool, index) => (
                                             <img src={tool} alt={`tool-${index}`}/>
-                                            ))  
-                                        }
+                                        ))  
+                                    }
                                 </ProjectTools>
                             </ProjectDetails>
                         </ProjectContainer>

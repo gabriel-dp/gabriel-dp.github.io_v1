@@ -24,6 +24,7 @@ export const ProjectContainer = styled.div`
     border-radius: 1rem;
     overflow: hidden;
     margin-bottom: 3rem;
+    cursor: default;
 
     ${props => props.side ? 'margin-right: 5%' : 'margin-left: 5%'};
 
@@ -32,7 +33,7 @@ export const ProjectContainer = styled.div`
         text-align: ${props => props.side ? 'left' : 'right'};
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 850px) {
         flex-direction: column-reverse;
         height: 40rem;
         width: 100%;
@@ -70,9 +71,16 @@ export const ProjectImage = styled.div`
         top: 0;
         width: 100%;
         box-shadow: inset 0 -4rem 5rem ${props => props.theme.colors.primary}55;
+        transition: all 0.25s ease;
     }
 
-    @media (max-width: 750px) {
+    :hover {
+        ::after {
+            box-shadow: inset 0 -4rem 5rem ${props => props.theme.colors.primary}11;
+        }
+    }
+
+    @media (max-width: 850px) {
         width: 100%;
         height: 40%;
     }
@@ -92,6 +100,7 @@ export const ProjectDetails = styled.div.attrs({
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     h3 {
         font-size: 1.75rem;
@@ -113,18 +122,16 @@ export const ProjectDetails = styled.div.attrs({
         font-weight: 400;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 850px) {
         width: 100%;
-        height: 60%;
+        min-height: 60%;
     }
 `;
 
 export const ProjectTools = styled.div`
     width: 100%;
     margin: 1.5rem 0;
-    position: absolute;
-    bottom: 2rem;
-
+    
     h5 {
         font-size: 1.15rem;
         font-family: 'Oswald', sans-serif;
@@ -135,6 +142,13 @@ export const ProjectTools = styled.div`
     img {
         height: 2rem;
         margin: 0 0.5rem;
+        transition: all 0.25s ease;
+
+        @media (max-width: 750px) {
+            :hover {
+                height: 2.25rem;
+            }
+        }
     }
 `;
 
