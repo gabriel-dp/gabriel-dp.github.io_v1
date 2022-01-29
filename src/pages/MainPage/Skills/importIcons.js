@@ -9,9 +9,9 @@ const ICONS = {
         'C#' : require('../../../assets/icons/skills/langs/c-sharp.svg').default,
         'Python' : require('../../../assets/icons/skills/langs/python.svg').default,
         'Javascript': require('../../../assets/icons/skills/langs/javascript.svg').default,
-        'React' : require('../../../assets/icons/skills/fw/react.svg').default,
-        'Three.js' : require('../../../assets/icons/skills/fw/threejs.svg').default,
-        'Styled Components' : require('../../../assets/icons/skills/fw/styled-components.png'),
+        'React' : require('../../../assets/icons/skills/langs/react.svg').default,
+        'Three.js' : require('../../../assets/icons/skills/langs/threejs.svg').default,
+        'Styled Components' : require('../../../assets/icons/skills/langs/styled-components.png'),
     },
     '3D Modelling': {
         'sizes' : {
@@ -19,8 +19,8 @@ const ICONS = {
             'title' : 1.5,
             'icon' : 2.75,
         },
-        'Fusion 360' : require('../../../assets/icons/skills/other/fusion360.jpg'),
-        'Blender' : require('../../../assets/icons/skills/other/blender.svg').default,
+        'Fusion 360' : require('../../../assets/icons/skills/3d/fusion360.jpg'),
+        'Blender' : require('../../../assets/icons/skills/3d/blender.svg').default,
     },
     'Others': {
         'sizes' : {

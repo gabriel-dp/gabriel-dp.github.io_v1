@@ -1,87 +1,40 @@
-import { useState, useEffect, useRef } from 'react';
-
 import Header from '../../../components/Header';
-import GithubCard from './GithubCard';
 import SeeMore from '../../../components/SeeMore';
+import PROJECTS from './projects';
 
-import { ProjectsTabContainer, CardsContainer } from './styles';
+import { ProjectsTabContainer, ProjectContainer, ProjectImage, ProjectDetails, ProjectTools, ProjectLink } from './styles';
+import { FaLink } from 'react-icons/fa';
 
 const Projects = ({innerRef}) => {
-
-    const githubConfig = {
-        username: 'gabrieldp23',
-        keyTopic: 'portfolio' 
-    };
-    
-    const [repos, setRepos] = useState([]);
-    useEffect(() => {
-        //requests data on start
-
-        async function fetchAsync (url) {
-            return await (await fetch(url)).json();
-        }
-        
-        fetchAsync(`https://api.github.com/users/${githubConfig.username}/repos`).then(response => {
-            setRepos(response);
-        });
-        
-    }, [githubConfig.username])
-
-    
-    const [repositories, setRepositories] = useState([]);
-    const firstUpdate = useRef(true);
-    useEffect(() => {
-        if (firstUpdate.current) {
-            firstUpdate.current = false;
-            return;
-        }
-
-        class Repository {
-            constructor (name, description, language, website, tags) {
-                this.name = name;
-                this.description = description;
-                this.language = language;
-                this.website = website;
-                this.tags = tags;
-            }
-        }
-
-        var selectedRepos = []
-        repos.forEach(repo => {
-            repo['topics'].forEach(topic => {
-                if (topic === githubConfig.keyTopic) {
-                    selectedRepos.push(new Repository(
-                        repo['name'], 
-                        repo['description'], 
-                        repo['language'], 
-                        repo['homepage'], 
-                        repo['topics'].filter(function(value) {
-                            return value !== githubConfig.keyTopic;
-                        })
-                    ))
-                }
-            })
-        });
-        
-        setRepositories(selectedRepos);
-
-    }, [githubConfig.keyTopic, repos]);
-    
     return (
         <div ref={innerRef}>
             <ProjectsTabContainer>
-                <Header title={'Projects'} subtitle={'From Github'}/>
-                <CardsContainer>
-                    {
-                        repositories.map(repo => (
-                            <GithubCard
-                                key={repo.name}
-                                repoData={repo}
-                                githubConfig={githubConfig}
-                            />
-                        ))
-                    }
-                </CardsContainer>
+                <Header title={'Projects'} subtitle={'My works'}/>
+                {
+                    Object.keys(PROJECTS).map((project, index) => (
+                        <ProjectContainer side={(index%2 === 0)}>
+                            <ProjectImage>
+                                <img src={PROJECTS[project]['image']} alt={`${project}-image`}/>
+                                <ProjectLink>
+                                        View this project &nbsp;<FaLink/>
+                                    </ProjectLink>
+                            </ProjectImage>
+                            <ProjectDetails>
+                                <h3>{project}</h3>
+                                <h4>{PROJECTS[project]['subtitle']}</h4>
+                                <p>{PROJECTS[project]['description']}</p>
+                                <ProjectTools>
+                                    <h5>Tools used:</h5>
+                                    {
+                                        PROJECTS[project]['tools'].map((tool, index) => (
+                                            <img src={tool} alt={`tool-${index}`}/>
+                                            ))  
+                                        }
+                                </ProjectTools>
+                            </ProjectDetails>
+                        </ProjectContainer>
+                    ))
+                }
                 <SeeMore>
                     <a aria-label='More Projects' target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>
                         See more projects
