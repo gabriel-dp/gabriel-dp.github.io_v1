@@ -67,7 +67,6 @@ export const MyDescription = styled.div`
     border-radius: 1rem;
     margin: 3rem 0;
     padding: 1.5rem 2rem;
-    border: 0.2rem ${props => props.theme.colors.white} solid;
 
     p {
         color: ${props => props.theme.colors.white};

@@ -29,7 +29,6 @@ export const FullDescription = styled.div`
     width: 100%;
     background-color: ${props => props.theme.colors.secondary};
     border-radius: 1rem;
-    border: 0.25rem ${props => props.theme.colors.white} solid;
     padding: 1.5rem;
     color: ${props => props.theme.colors.white};
 

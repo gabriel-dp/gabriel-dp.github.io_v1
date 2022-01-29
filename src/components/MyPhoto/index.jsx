@@ -8,7 +8,6 @@ const MyPhotoDiv = styled.div`
     align-items: center;
     justify-content: center;
     transition: all 0.25s ease;
-    border: 0.2rem ${props => props.theme.colors.lightgray} solid;
     border-radius: 50%;
     background-color: ${props => props.theme.colors.secondary};
 
