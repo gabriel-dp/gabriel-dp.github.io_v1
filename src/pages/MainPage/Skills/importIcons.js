@@ -1,7 +1,7 @@
 const ICONS = {
     'Languages, Frameworks and Libs': {
         'sizes' : {
-            'width' : '100%',
+            'width' : 1,
             'title' : 1.625,
             'icon' : 3.25,
         },
@@ -15,7 +15,7 @@ const ICONS = {
     },
     '3D Modelling': {
         'sizes' : {
-            'width' : '90%',
+            'width' : 0.9,
             'title' : 1.5,
             'icon' : 2.75,
         },
@@ -24,7 +24,7 @@ const ICONS = {
     },
     'Others': {
         'sizes' : {
-            'width' : '80%',
+            'width' : 0.8,
             'title' : 1.25,
             'icon' : 2.25,
         },

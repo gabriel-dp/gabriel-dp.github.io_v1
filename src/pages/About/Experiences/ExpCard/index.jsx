@@ -5,7 +5,7 @@ const ExpCard = ({ title, time, achievement, logo, image, description, link }) =
     return (
         <ExpContainer>
             <ExpImage>
-                <img src={image} alt={`${title}-image`}/>
+                <img src={image} alt={`${title}-experience`}/>
             </ExpImage>
             <ExpDetails>
                 <ExpHeader>

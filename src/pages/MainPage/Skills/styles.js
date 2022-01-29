@@ -16,7 +16,8 @@ export const SkillsTabContainer = styled.div`
 `;
 
 export const SkillsClassContainer = styled.div`
-    width: ${props => props.width};
+    width: 100%;
+    max-width: calc(${props => props.width}*100%);
     display: flex;
     flex-direction: column;
     align-items: center;

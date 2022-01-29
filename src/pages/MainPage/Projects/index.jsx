@@ -45,9 +45,9 @@ const Projects = ({innerRef}) => {
                     ))
                 }
                 <SeeMore bg='switch' url='projects'>
-                    <a>
+                    <p>
                         See more projects
-                    </a>
+                    </p>
                 </SeeMore>
             </ProjectsTabContainer>
         </div>

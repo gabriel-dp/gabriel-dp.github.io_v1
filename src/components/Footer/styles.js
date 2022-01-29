@@ -2,15 +2,22 @@ import styled from 'styled-components';
 
 export const FooterTabContainer = styled.div`
     width: 100%;
-    min-height: 15rem;
     background-color: ${props => props.theme.colors.background};
+    padding: 2rem 15%;
+    display: flex;
+    justify-content: center;
+`;
+
+export const FooterContainer = styled.div`
+    width: 100%;
+    max-width: 62.5rem;
+    min-height: 12rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2rem 15%;
+    flex-wrap: wrap;    
     transition: all 0.2s ease;
-    flex-wrap: wrap;
 
     @media (max-width: 750px) {
         flex-direction: column;

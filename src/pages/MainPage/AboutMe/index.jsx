@@ -54,9 +54,9 @@ const AboutMe = ({innerRef}) => {
                     <p>A Enthusiastic of Robotics & Technology who started the developer career in 2019, during the High School with the Brazilian Robotics Olympiad (OBR). In addition to programming, I also have experience with Design and 3D Modeling due the F1 in Schools challenge.</p>
                 </MyDescription>
                 <SeeMore url='about-me' aria-label='More Projects'>
-                    <a aria-label='More Projects'>
+                    <p>
                         See more about me
-                    </a>
+                    </p>
                 </SeeMore>
             </AboutMeTabContainer>
         </div>

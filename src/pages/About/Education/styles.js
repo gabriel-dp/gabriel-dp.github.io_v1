@@ -12,10 +12,14 @@ export const EducationContainer = styled.div`
 
 export const TimeLine = styled.div`
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export const GraduationContainer = styled.div`
     width: 100%;
+    max-width: 70rem;
     min-height: 10rem;
     position: relative;
 `;
