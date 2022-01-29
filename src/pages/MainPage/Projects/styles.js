@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Tilt from 'react-parallax-tilt';
 
 export const ProjectsTabContainer = styled.div`
     width: 100%;
@@ -16,7 +17,7 @@ export const ProjectsTabContainer = styled.div`
 `;
 
 export const ProjectContainer = styled.div`
-    width: 80%;
+    width: 100%;
     max-width: 60rem;
     height: 25rem;
     display: flex;
@@ -25,12 +26,18 @@ export const ProjectContainer = styled.div`
     overflow: hidden;
     margin-bottom: 3rem;
     cursor: default;
-
+    
     ${props => props.side ? 'margin-right: 5%' : 'margin-left: 5%'};
-
+    
     .details {
         align-items: ${props => props.side ? 'flex-start' : 'flex-end'};
         text-align: ${props => props.side ? 'left' : 'right'};
+    }
+
+    @media (min-width: 851px) {
+        .image {
+            border-radius: ${props => props.side ? '1rem 0 0 1rem' : '0 1rem 1rem 0'};
+        }
     }
 
     @media (max-width: 850px) {
@@ -44,10 +51,16 @@ export const ProjectContainer = styled.div`
             align-items: flex-start;
             text-align: left;
         }
+
+        .image {
+            border-radius: 0 0 1rem 1rem;
+        }
     }
 `;
 
-export const ProjectImage = styled.div`
+export const ProjectImage = styled.div.attrs({
+    className: 'image'
+})`
     width: 40%;
     height: 100%;
     background-color: gray;
@@ -55,6 +68,8 @@ export const ProjectImage = styled.div`
     display: flex;
     justify-content: center;
     transition: all 0.25s ease;
+    border: 0.25rem ${props => props.theme.title === 'dark' ? props.theme.colors.secondary : props.theme.colors.primary} solid;
+    overflow: hidden;
     
     img {
         width:100%; 
@@ -62,27 +77,10 @@ export const ProjectImage = styled.div`
         object-fit: cover;
         object-position: center;
     }
-    
-    ::after {
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        box-shadow: inset 0 -4rem 5rem ${props => props.theme.colors.primary}55;
-        transition: all 0.25s ease;
-    }
-
-    :hover {
-        ::after {
-            box-shadow: inset 0 -4rem 5rem ${props => props.theme.colors.primary}11;
-        }
-    }
 
     @media (max-width: 850px) {
         width: 100%;
-        height: 40%;
+        height: 60%;
     }
 `;
 
@@ -176,5 +174,19 @@ export const ProjectLink = styled.button.attrs({
     :hover {
         color: ${props => props.theme.colors.white};
         background-color: ${props => props.theme.title === 'dark' ? props.theme.colors.primary : props.theme.colors.secondary};
+    }
+`;
+
+export const StyledTilt = styled(Tilt).attrs({
+    tiltMaxAngleX: 10,
+    tiltMaxAngleY: 10,
+    perspective: 2000,
+})`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @media (min-width: 851px) {
+        width: 80%;
     }
 `;
