@@ -1,4 +1,4 @@
-<br/><br/>
+<br/>
 
 <p align=center>
     <img width=125 src='./docs/logo.ico'/>
@@ -39,7 +39,7 @@ You can see the improvement of the projects along the time and also get to know 
 These are the main features of the portfolio
 
 |Simple 3D runner minigame|
-|-|
+|:-|
 |**Theme toggle - light / dark**|
 |**User-interactive animations**|
 |**GitHub projects section**|
@@ -49,7 +49,7 @@ These are the main features of the portfolio
 ### Technic Highlights
 
 |Fully made with React (JavaScript)|
-|-|
+|:-|
 |**Simple minigame made with Three.js**|
 |**Responsive for all devices and screen sizes**|
 |**Good project sctructure (easy maintenance)**|
