@@ -1,4 +1,4 @@
-<br/>
+<br/><br/>
 
 <p align=center>
     <img width=125 src='./docs/logo.ico'/>
@@ -42,7 +42,7 @@ These are the main features of the portfolio
 |:-|
 |**Theme toggle - light / dark**|
 |**User-interactive animations**|
-|**GitHub projects section**|
+|**"GitHub Projects" section**|
 |**"About Me" section**|
 
 
