@@ -30,7 +30,7 @@
 
 This portfolio aims to show some of my current and future works as a Software Developer and 3D Modeler. 
 <br/>
-You can see the improvement of the projects along the time and also get to know a little about me and my experiences. 😄
+You can see the improvement of the projects along the time and also get to know a little about me and my experiences.
 
 <br/>
 
