@@ -5,9 +5,9 @@ const Education = () => {
 
     const graduations = {
         'University' : {
-            'institution' : '????',
-            'institution-logo' : '',
-            'time' : '2022 - ????',
+            'institution' : 'Universidade Federal de São João Del Rei',
+            'institution-logo' : require('../../../assets/images/ufsj.png'),
+            'time' : '2022 - Now',
             'side' : 'left',
         },
         'High School' : {

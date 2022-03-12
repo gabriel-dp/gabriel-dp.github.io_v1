@@ -41,6 +41,7 @@ export const Graduation = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     
     &::before {
         content: '';
@@ -149,8 +150,8 @@ export const GraduationData = styled.div.attrs({
 `;
 
 export const InstitutionLogo = styled.img`
-    height: 2.5rem;
-    margin: 0 1rem;
+    height: 3rem;
+    margin: 0.75rem 0.5rem 0 0.5rem;
 `;
 
 export const GraduationTime = styled.h6`

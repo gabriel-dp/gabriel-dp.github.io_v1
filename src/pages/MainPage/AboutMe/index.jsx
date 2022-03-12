@@ -21,7 +21,7 @@ const AboutMe = ({innerRef}) => {
         },
         'education' : {
             'icon' : <FaGraduationCap/>,
-            'text' : `Future Computer Scientist`
+            'text' : `Computer Science - UFSJ`
         },
         'hobby' : {
             'icon' : <FaBasketballBall/>,
