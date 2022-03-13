@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.d907db40.js",
+    "main.js": "/static/js/main.52e80392.js",
     "static/media/zul.png": "/static/media/zul.aaae0e9cff55e64a765a.png",
     "static/media/model-circle.png": "/static/media/model-circle.03958c62938415bcf895.png",
     "static/media/aeb.png": "/static/media/aeb.b704040d8a226c8586f0.png",
     "static/media/sword-todo.png": "/static/media/sword-todo.c0f9d5e1b5fd8cbe9893.png",
     "static/media/obr.jpg": "/static/media/obr.5c1cfcfa894e93125efb.jpg",
+    "static/media/ufsj.png": "/static/media/ufsj.70f6f25f1c33e5a9bfa3.png",
     "static/media/f1inschools.jpg": "/static/media/f1inschools.0474d9e5ebeadffb1721.jpg",
     "static/media/anicon.jpg": "/static/media/anicon.2aba0792d973d20ad10a.jpg",
     "static/media/anicon-logo.png": "/static/media/anicon-logo.8aec12a8d8ebee2b74ac.png",
@@ -27,9 +28,9 @@
     "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
     "static/media/threejs.svg": "/static/media/threejs.a02bc572667de670fbfb2173c0331d05.svg",
     "index.html": "/index.html",
-    "main.d907db40.js.map": "/static/js/main.d907db40.js.map"
+    "main.52e80392.js.map": "/static/js/main.52e80392.js.map"
   },
   "entrypoints": [
-    "static/js/main.d907db40.js"
+    "static/js/main.52e80392.js"
   ]
 }
