@@ -17,7 +17,7 @@ const AboutMe = ({innerRef}) => {
         },
         'local' : {
             'icon' : <FaMapMarkerAlt/>,
-            'text' : `Brazil  \xa0//\xa0  Vitória da Conquista - BA`
+            'text' : `Brazil  \xa0//\xa0  São João Del Rei - MG`
         },
         'education' : {
             'icon' : <FaGraduationCap/>,
