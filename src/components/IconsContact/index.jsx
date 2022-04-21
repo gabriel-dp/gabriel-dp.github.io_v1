@@ -10,7 +10,7 @@ const IconsContact = () => {
         },
         {
             'icon': <FaLinkedin/>,
-            'url': 'https://www.linkedin.com/in/gabriel-meira-041869166/',
+            'url': 'https://www.linkedin.com/in/gabriel-de-paula-meira/',
         },
         {
             'icon': <FaInstagram/>,

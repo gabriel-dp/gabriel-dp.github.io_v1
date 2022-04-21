@@ -1,6 +1,6 @@
 import Header from '../../../components/Header';
 import MyPhoto from '../../../components/MyPhoto';
-import SeeMore from '../../../components/SeeMore';
+import SeeMoreButton from '../../../components/SeeMoreButton';
 
 import { AboutMeTabContainer, MySelf, MyDetails, SingleDetail, StyledIconFA , MyDescription} from './styles';
 import { FaHourglassHalf, FaMapMarkerAlt, FaGraduationCap, FaBasketballBall  } from 'react-icons/fa';
@@ -53,11 +53,11 @@ const AboutMe = ({innerRef}) => {
                 <MyDescription>
                     <p>A Enthusiastic of Robotics & Technology who started the developer career in 2019, during the High School with the Brazilian Robotics Olympiad (OBR). In addition to programming, I also have experience with Design and 3D Modeling due the F1 in Schools challenge.</p>
                 </MyDescription>
-                <SeeMore url='about-me' aria-label='More Projects'>
+                <SeeMoreButton url='about-me' aria-label='More About Me'>
                     <p>
                         See more about me
                     </p>
-                </SeeMore>
+                </SeeMoreButton>
             </AboutMeTabContainer>
         </div>
     );

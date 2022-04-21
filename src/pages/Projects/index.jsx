@@ -86,7 +86,7 @@ const Projects = ({ ToggleTheme }) => {
                 </CardsContainer>
                 <SeeMore>
                     <a aria-label='More Projects' target='_blanck' href='https://github.com/gabrieldp23?tab=repositories'>
-                        See more projects
+                        See more projects on GitHub
                     </a>
                 </SeeMore>
             </ProjectsTabContainer>

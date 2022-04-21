@@ -1,5 +1,5 @@
 import Header from '../../../components/Header';
-import SeeMore from '../../../components/SeeMore';
+import SeeMoreButton from '../../../components/SeeMoreButton';
 import PROJECTS from './projects';
 
 import { ProjectsTabContainer, ProjectContainer, ProjectImage, ProjectDetails, ProjectTools, ProjectLink, StyledTilt } from './styles';
@@ -44,11 +44,11 @@ const Projects = ({innerRef}) => {
                         </StyledTilt>
                     ))
                 }
-                <SeeMore bg='switch' url='projects'>
+                <SeeMoreButton url='projects' aria-label='More Projects' bg='switch'>
                     <p>
                         See more projects
                     </p>
-                </SeeMore>
+                </SeeMoreButton>
             </ProjectsTabContainer>
         </div>
     );
