@@ -66,8 +66,6 @@ This is the first version of my portfolio, there are some changes and improvemen
 
 - [ ] Improve minigame
 
-- [ ] Change informations on "About Me" after February
-
 <br/>
 
 ## 🖥 Running locally
