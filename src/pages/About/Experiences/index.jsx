@@ -19,7 +19,7 @@ const Experiences = () => {
             'achievement' : '2nd place Nationals 2021',
             'logo' : require('../../../assets/images/exp/f1inschools-logo.png'),
             'image' : require('../../../assets/images/exp/f1inschools.jpg'),
-            'description' : 'Another competition, that time no robots, but F1. In F1 in Schools, SwordFish (my team), was challenged to project, test, build and race with a F1 car in miniature, working in areas of Marketing and Project Management, also presenting all the work to the judges. The achievements are: 2nd place State and 5th place Nationals (2020) | 2nd place Nationals (2021) and classified to the World Finals 2022, that will happen on May, stay on!',
+            'description' : 'Another competition, that time no robots, but F1 cars. In F1 in Schools, SwordFish (my team), was challenged to project, test, build and race with a F1 car in miniature, working in areas of Marketing and Project Management, also presenting all the work to the judges. The achievements are: 2nd place State and 5th place Nationals (2020) | 2nd place Nationals (2021) and classified to the World Finals 2022',
             'link': 'http://sesi.fieb.org.br/sesiescola/noticias/equipe-baiana-premiada-no-torneio-sesi-de-robótica-vai-para-competição-internacional-em-2022/',
         },
         'ANICON' : {
