@@ -31,7 +31,7 @@ const GithubCard = ({ repoData, githubConfig }) => {
                     }
                 </TagsContainer>
             </DescriptionContainer>
-            <ImageCover><img src={repoCoverUrl} alt={`${repoData.name}-image`}/></ImageCover>
+            <ImageCover><img src={repoCoverUrl} alt={`${repoData.name}-preview`}/></ImageCover>
         </CardContainer>
     );
 }
