@@ -3,7 +3,7 @@ import { FaLink } from 'react-icons/fa';
 
 const GithubCard = ({ repoData, githubConfig }) => {
     const repoUrl = `https://github.com/${githubConfig.username}/${repoData.name}/`;
-    const repoCoverUrl = `https://raw.githubusercontent.com/${githubConfig.username}/${repoData.name}/main/cover/cover.png`
+    const repoCoverUrl = `https://raw.githubusercontent.com/${githubConfig.username}/${repoData.name}/main/docs/social-preview.png`
 
     return (
         <CardContainer target='_blanck' href={repoUrl}>
@@ -31,7 +31,7 @@ const GithubCard = ({ repoData, githubConfig }) => {
                     }
                 </TagsContainer>
             </DescriptionContainer>
-            <ImageCover><img src={repoCoverUrl} alt='portfolio-cover'/></ImageCover>
+            <ImageCover><img src={repoCoverUrl} alt={`${repoData.name}-image`}/></ImageCover>
         </CardContainer>
     );
 }

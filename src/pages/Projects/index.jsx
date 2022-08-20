@@ -24,6 +24,7 @@ const Projects = ({ ToggleTheme }) => {
         
         fetchAsync(`https://api.github.com/users/${githubConfig.username}/repos`).then(response => {
             setRepos(response);
+            console.log(response);
         });
         
     }, [githubConfig.username])
