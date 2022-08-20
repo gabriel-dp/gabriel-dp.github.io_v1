@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.570d469d.js",
+    "main.js": "/static/js/main.ddeb146d.js",
     "static/media/zul.png": "/static/media/zul.aaae0e9cff55e64a765a.png",
     "static/media/model-circle.png": "/static/media/model-circle.03958c62938415bcf895.png",
     "static/media/aeb.png": "/static/media/aeb.b704040d8a226c8586f0.png",
@@ -17,20 +17,20 @@
     "static/media/aeb-logo.png": "/static/media/aeb-logo.78c835b26177972ab5f6.png",
     "static/media/coreldraw.png": "/static/media/coreldraw.353242ee24eae26155c8.png",
     "static/media/office.svg": "/static/media/office.93c1e4f94ac452f5934fa7f746ae4812.svg",
-    "static/media/react.svg": "/static/media/react.e27571eaed899c642345e71163624ef9.svg",
-    "static/media/vscode.svg": "/static/media/vscode.5f6c87ee85944898b6682f2a2a13df91.svg",
-    "static/media/blender.svg": "/static/media/blender.a994b672f7161c5011748171ad4bd99c.svg",
-    "static/media/c-sharp.svg": "/static/media/c-sharp.e2c0510d2b743a87e7621b703ba07906.svg",
+    "static/media/react.svg": "/static/media/react.19465659ecf7a1122618d3dcf23bf337.svg",
+    "static/media/vscode.svg": "/static/media/vscode.026f1dab135858412a19466b7efdf523.svg",
+    "static/media/blender.svg": "/static/media/blender.d2f5b95b4580227f584209db2afe712c.svg",
+    "static/media/c-sharp.svg": "/static/media/c-sharp.72d6dcc144316c8b0604497b10071d70.svg",
     "static/media/arduino.svg": "/static/media/arduino.5e8b95309e564d23f42755dcb2617eff.svg",
-    "static/media/python.svg": "/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
-    "static/media/c-plusplus.svg": "/static/media/c-plusplus.c4a42e1361f15351e4445b53cde0aa8e.svg",
-    "static/media/git.svg": "/static/media/git.fd381642a8b14fec88b8d6df1ff25220.svg",
-    "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
-    "static/media/threejs.svg": "/static/media/threejs.a02bc572667de670fbfb2173c0331d05.svg",
+    "static/media/python.svg": "/static/media/python.e78f188fa5e62ee2613d19802f817df6.svg",
+    "static/media/c-plusplus.svg": "/static/media/c-plusplus.0e26a84462395f4e7beb0ec95924454c.svg",
+    "static/media/git.svg": "/static/media/git.8497c3c4218d87dc7fd569a5549d60d0.svg",
+    "static/media/javascript.svg": "/static/media/javascript.1d3d28798f08ea1ed7cd47f812044c4f.svg",
+    "static/media/threejs.svg": "/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "index.html": "/index.html",
-    "main.570d469d.js.map": "/static/js/main.570d469d.js.map"
+    "main.ddeb146d.js.map": "/static/js/main.ddeb146d.js.map"
   },
   "entrypoints": [
-    "static/js/main.570d469d.js"
+    "static/js/main.ddeb146d.js"
   ]
 }
