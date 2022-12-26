@@ -10,7 +10,7 @@ import { Screen, ProjectsTabContainer, CardsContainer } from './styles';
 const Projects = ({ ToggleTheme }) => {
 
     const githubConfig = {
-        username: 'gabrieldp23',
+        username: 'gabriel-dp',
         keyTopic: 'portfolio' 
     };
     

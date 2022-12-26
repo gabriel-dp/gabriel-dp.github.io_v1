@@ -6,7 +6,7 @@
 <h1 align=center>Gabriel de Paula's Portfolio</h1>
 
 <p align=center>
-    <a href='https://gabrieldp23.github.io/'>gabrieldp23.github.io</a>
+    <a href='https://gabriel-dp.github.io/'>gabriel-dp.github.io</a>
     <br/><br/>
     <img height=30 src='https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black'>
     &nbsp;
@@ -72,7 +72,7 @@ This is the first version of my portfolio, there are some changes and improvemen
 
 ```bash
 # Clone
-git clone https://github.com/gabrieldp23/gabrieldp23.github.io.git
+git clone https://github.com/gabriel-dp/gabriel-dp.github.io.git
 
 # Node modules
 npm install
