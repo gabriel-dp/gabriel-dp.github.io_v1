@@ -6,7 +6,7 @@ const IconsContact = () => {
     const socialMediaIcons = [
         {
             'icon': <FaGithub/>,
-            'url': 'https://github.com/gabrieldp23',
+            'url': 'https://github.com/gabriel-dp',
         },
         {
             'icon': <FaLinkedin/>,

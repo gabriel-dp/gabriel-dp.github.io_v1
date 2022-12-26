@@ -6,7 +6,7 @@ const PROJECTS = {
         'tools' : [
             require('../../../assets/icons/skills/langs/react.svg').default,
         ],
-        'url' : 'https://gabrieldp23.github.io/Sword-ToDo/',
+        'url' : 'https://gabriel-dp.github.io/Sword-ToDo/',
     },
     'Zul' : {
         'image' : require('../../../assets/images/projects/zul.png'),
